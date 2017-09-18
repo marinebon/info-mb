@@ -1,0 +1,65 @@
+---
+output:
+html_document:
+self_contained: false
+lib_dir: "libs"
+fig_height: 2
+fig_width: 4
+params:
+element: "phytoplankton"
+---
+
+```{r, echo=FALSE, message=F, warning=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F)
+library(infographiq)
+```
+
+<base target="_parent">
+
+```{r}
+tryCatch(
+    plot_timeseries(
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/efm_biomass_mb_by_year.csv",
+        title   = "Phytoplankton Biomass",
+        y_label = "mg C m-3",
+        skip    = 0,
+        filter  = NULL,
+        col_t   = "yr",
+        col_y   = "b_abun",
+        group_by= NULL
+    ),
+    error = function(e) e
+)
+```
+
+```{r}
+tryCatch(
+    plot_timeseries(
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/efm_diatoms_mb_by_year.csv",
+        title   = "Pennate Diatom Abundance",
+        y_label = "mg C m-3",
+        skip    = 0,
+        filter  = NULL,
+        col_t   = "yr",
+        col_y   = "p_abun",
+        group_by= NULL
+    ),
+    error = function(e) e
+)
+```
+
+```{r}
+tryCatch(
+    plot_timeseries(
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/efm_dinos_mb_by_year.csv",
+        title   = "Autotrophic Dinoflagellates Abundance",
+        y_label = "mg C m-3",
+        skip    = 0,
+        filter  = NULL,
+        col_t   = "yr",
+        col_y   = "a_abun",
+        group_by= NULL
+    ),
+    error = function(e) e
+)
+```

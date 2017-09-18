@@ -1,10 +1,10 @@
 Classification_level,svg_id,plot_title,filter,col_t,col_y,col_se,y_label,group_by,csv_url,direct_path,skip_lines
-Trophic group,phytoplankton,Phytoplankton,NA,yr,b_abun,NA,Biomass (mg C m-3),NA,https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/efm_biomass_mb_by_year.csv,info-mb/prep/data/phytoplankton/efm_biomass_mb_by_year.csv,
-Foundation species,phytoplankton,Pennate Diatom,NA,yr,p_abun,NA,Biomass (mg C m-3),NA,https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/efm_diatoms_mb_by_year.csv,info-mb/master/prep/data/phytoplankton/efm_diatoms_mb_by_year.csv,
-Foundation species,phytoplankton,Autotrophic Dinoflagellates,NA,yr,a_abun,NA,Biomass (mg C m-3),NA,https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/efm_dinos_mb_by_year.csv,info-mb/master/prep/data/phytoplankton/efm_dinos_mb_by_year.csv,
-Trophic group,pinnipeds,Female sea lion pup growth rate,,time,mean_growth_rate,NA,Mean growth rate,NA,"http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csv?time,mean_growth_rate",,
-Trophic group,pinnipeds,Female sea lion pup weight index,,time,mean_weight,NA,Mean pup weight,NA,"http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csv?time,mean_weight",,
-Trophic group,pinnipeds,"Sea lion pup count, San Miguel Isl.",,time,live_pup_count,NA,Average live pup count,NA,"http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csv?time,live_pup_count",,
+Trophic group,phytoplankton,Phytoplankton Biomass,NA,yr,b_abun,NA,mg C m-3,NA,https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/efm_biomass_mb_by_year.csv,info-mb/prep/data/phytoplankton/efm_biomass_mb_by_year.csv,
+Foundation species,phytoplankton,Pennate Diatom Abundance,NA,yr,p_abun,NA,mg C m-3,NA,https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/efm_diatoms_mb_by_year.csv,info-mb/master/prep/data/phytoplankton/efm_diatoms_mb_by_year.csv,
+Foundation species,phytoplankton,Autotrophic Dinoflagellates Abundance,NA,yr,a_abun,NA,mg C m-3,NA,https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/efm_dinos_mb_by_year.csv,info-mb/master/prep/data/phytoplankton/efm_dinos_mb_by_year.csv,
+Trophic group,pinnipeds,Female sea lion pup growth rate,NA,UTC,kg/day,NA,Mean growth rate,NA,"http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csv?time,mean_growth_rate",,1
+Trophic group,pinnipeds,Female sea lion pup weight index,NA,UTC,kg,NA,Mean pup weight,NA,"http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csv?time,mean_weight",,1
+Trophic group,pinnipeds,"Sea lion pup count, San Miguel Isl.",NA,UTC,count,NA,Average live pup count,NA,"http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csv?time,live_pup_count",,1
 ,,Coastal pelagics-Simp north,,,,,,,,,
 ,,Coastal pelagics-Spp north,,,,,,,,,
 ,,Groundfish Simpson diversity - coastwide,,,,,,,,,

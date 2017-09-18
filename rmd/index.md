@@ -1,5 +1,5 @@
 ---
-title: "Monterey Bay Infographics"
+title: "Florida Keys Infographics"
 ---
 
 Welcome!
