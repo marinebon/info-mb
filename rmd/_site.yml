@@ -1,8 +1,8 @@
-name: "Florida Keys Infographics"
+name: "Monterey Bay Infographics"
 output_dir: "../docs"
 lib_dir: libs
 navbar:
-  title: "Florida Keys Infographics"
+  title: "Monterey Bay Infographics"
   left:
     - text: "Home"
       href: index.html
