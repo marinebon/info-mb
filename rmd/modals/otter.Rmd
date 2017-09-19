@@ -1,0 +1,49 @@
+---
+output:
+html_document:
+self_contained: false
+lib_dir: "libs"
+fig_height: 2
+fig_width: 4
+params:
+element: "otter"
+---
+
+```{r, echo=FALSE, message=F, warning=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F)
+library(infographiq)
+```
+
+<base target="_parent">
+
+```{r}
+tryCatch(
+    plot_timeseries(
+        csv_tv  = "NA",
+        title   = "NA",
+        y_label = "NA",
+        skip    = 0,
+        filter  = NULL,
+        col_t   = NULL,
+        col_y   = NULL,
+        group_by= NULL
+    ),
+    error = function(e) e
+)
+```
+
+```{r}
+tryCatch(
+    plot_timeseries(
+        csv_tv  = "",
+        title   = "",
+        y_label = "",
+        skip    = ,
+        filter  = ,
+        col_t   = ,
+        col_y   = ,
+        group_by= 
+    ),
+    error = function(e) e
+)
+```
