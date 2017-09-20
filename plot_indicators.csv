@@ -1,5 +1,6 @@
 Classification_level,svg_id,plot_title,filter,col_t,col_y,col_se,y_label,group_by,csv_url,direct_path,skip_lines
 Trophic group,phytoplankton,Phytoplankton Biomass,NA,yr,b_abun,NA,mg C m-3,NA,https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/efm_biomass_mb_by_year.csv,info-mb/prep/data/phytoplankton/efm_biomass_mb_by_year.csv,
+Foundation species,phytoplankton,Centric Diatom Abundance,NA,yr,c_abun,NA,mg C m-3,NA,https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/efm_diatoms_mb_by_year.csv,info-mb/master/prep/data/phytoplankton/efm_diatoms_mb_by_year.csv,
 Foundation species,phytoplankton,Pennate Diatom Abundance,NA,yr,p_abun,NA,mg C m-3,NA,https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/efm_diatoms_mb_by_year.csv,info-mb/master/prep/data/phytoplankton/efm_diatoms_mb_by_year.csv,
 Foundation species,phytoplankton,Autotrophic Dinoflagellates Abundance,NA,yr,a_abun,NA,mg C m-3,NA,https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/efm_dinos_mb_by_year.csv,info-mb/master/prep/data/phytoplankton/efm_dinos_mb_by_year.csv,
 Trophic group,pinnipeds,Female sea lion pup growth rate,NA,UTC,kg/day,NA,Mean growth rate,NA,"http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csv?time,mean_growth_rate",,1
