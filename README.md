@@ -21,3 +21,43 @@ For phytoplankton, we want to include some text in the "modal" popup window whic
 
 For the plots that show within a modal popup, we use `plot_indicators.csv`. In this file we give the `svg_id` that matches with the ids in the svg file(s) and in `svg_elements.csv`, along with the details to create the plot.
 
+# infographiq
+R library for creation of interactive infographics for data-driven storytelling
+
+# usage overview
+
+1. Define your infographic by creating the following files:
+
+* `./svg_elements.csv`
+* `./plot_indicators.csv`
+* `./svg/*.svg`
+
+For example files see [the info-demo repository](https://github.com/marinebon/info-demo), or one of the following regional infographics that have been generated using the infographiq package:
+
+* [Florida Keys infographics](https://github.com/marinebon/info-fk/)
+* [Monterey Bay Infographics](https://github.com/marinebon/info-mb)
+
+2. Use infographiq from an R console to generate the website:
+
+```R
+# install
+install.packages(c("tidyverse", "stringr", "rmarkdown", "dygraphs", "xts", "lubridate", "geojsonio", "RColorBrewer", "leaflet", "crosstalk", "servr", "roxygen2", "futile.logger"))
+
+if (!require('devtools')) install.packages('devtools')
+devtools::install_github('marinebon/infographiq')
+
+# load
+library(infographiq)
+
+# run i.e.
+create_info_site(site_title = "Monterey Bay Infographics", render_modals = T)
+```
+
+# dev workflow
+
+```R
+# to test your infographic generation with a local copy of infographiq
+# you must install from local source
+require('devtools')
+install_local('../infographiq')
+```
