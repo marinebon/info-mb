@@ -19,13 +19,13 @@ library(infographiq)
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "NA",
-        title   = "NA",
-        y_label = "NA",
+        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/FED_Rockfish_Catch.csvp?time,catch&latitude%3E=35.5&latitude%3C=38&common_name=%22PACIFIC%20HAKE%22",
+        title   = "Pacific Hake Abundance",
+        y_label = "Count",
         skip    = 0,
         filter  = NULL,
-        col_t   = NULL,
-        col_y   = NULL,
+        col_t   = "time (UTC)",
+        col_y   = "catch",
         group_by= NULL
     ),
     error = function(e) e
@@ -35,14 +35,14 @@ tryCatch(
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "",
-        title   = "",
-        y_label = "",
-        skip    = ,
-        filter  = ,
-        col_t   = ,
-        col_y   = ,
-        group_by= 
+        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/FED_Rockfish_Catch.csvp?time%2Ccatch%2Carea%2Cstrata&time%3E=2015-06-07T00%3A00%3A00Z&time%3C=2015-06-14T00%3A00%3A00Z&latitude%3E=35.5&latitude%3C=38",
+        title   = "Pacific Sardine",
+        y_label = "Count",
+        skip    = 0,
+        filter  = NULL,
+        col_t   = "time (UTC)",
+        col_y   = "catch",
+        group_by= NULL
     ),
     error = function(e) e
 )

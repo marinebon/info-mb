@@ -3,9 +3,11 @@ Trophic group,phytoplankton,Phytoplankton Biomass,NA,yr,b_abun,NA,mg C m-3,NA,ht
 Foundation species,phytoplankton,Centric Diatom Abundance,NA,yr,c_abun,NA,mg C m-3,NA,https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/efm_diatoms_mb_by_year.csv,info-mb/master/prep/data/phytoplankton/efm_diatoms_mb_by_year.csv,
 Foundation species,phytoplankton,Pennate Diatom Abundance,NA,yr,p_abun,NA,mg C m-3,NA,https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/efm_diatoms_mb_by_year.csv,info-mb/master/prep/data/phytoplankton/efm_diatoms_mb_by_year.csv,
 Foundation species,phytoplankton,Autotrophic Dinoflagellates Abundance,NA,yr,a_abun,NA,mg C m-3,NA,https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/efm_dinos_mb_by_year.csv,info-mb/master/prep/data/phytoplankton/efm_dinos_mb_by_year.csv,
-Trophic group,pinnipeds,Female sea lion pup growth rate,NA,UTC,kg/day,NA,Mean growth rate,NA,"http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csv?time,mean_growth_rate",,1
-Trophic group,pinnipeds,Female sea lion pup weight index,NA,UTC,kg,NA,Mean pup weight,NA,"http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csv?time,mean_weight",,1
-Trophic group,pinnipeds,"Sea lion pup count, San Miguel Isl.",NA,UTC,count,NA,Average live pup count,NA,"http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csv?time,live_pup_count",,1
+Trophic group,pinnipeds,Female sea lion pup growth rate,NA,time (UTC),mean_growth_rate (kg/day),NA,Mean growth rate,NA,"http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csvp?time,mean_growth_rate",,0
+Trophic group,pinnipeds,Female sea lion pup weight index,NA,time (UTC),mean_weight (kg),NA,Mean pup weight,NA,"http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csvp?time,mean_weight",,0
+Trophic group,pinnipeds,"Sea lion pup count, San Miguel Isl.",NA,time (UTC),live_pup_count (count),NA,Average live pup count,NA,"http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csvp?time,live_pup_count",,0
+Trophic group,forage-fish,Pacific Hake Abundance,NA,time (UTC),catch,NA,Count,NA,"http://oceanview.pfeg.noaa.gov/erddap/tabledap/FED_Rockfish_Catch.csvp?time,catch&latitude%3E=35.5&latitude%3C=38&common_name=%22PACIFIC%20HAKE%22",,
+Trophic group,forage-fish,Pacific Sardine,NA,time (UTC),catch,NA,Count,NA,http://oceanview.pfeg.noaa.gov/erddap/tabledap/FED_Rockfish_Catch.csvp?time%2Ccatch%2Carea%2Cstrata&time%3E=2015-06-07T00%3A00%3A00Z&time%3C=2015-06-14T00%3A00%3A00Z&latitude%3E=35.5&latitude%3C=38,,
 ,,Coastal pelagics-Simp north,,,,,,,,,
 ,,Coastal pelagics-Spp north,,,,,,,,,
 ,,Groundfish Simpson diversity - coastwide,,,,,,,,,
