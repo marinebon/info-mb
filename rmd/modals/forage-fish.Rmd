@@ -19,13 +19,13 @@ library(infographiq)
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/FED_Rockfish_Catch.csvp?time%2Ccatch%2Cmaturity%2Carea%2Cstrata&latitude%3E=35.5&latitude%3C=38&catch%3E0&common_name=%22PACIFIC%20HAKE%22",
-        title   = "Pacific Hake Abundance",
-        y_label = "Catch",
+        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_EI_FBC.csvp?time%2Cspecies_group%2Cmean_cpue%2CSeup%2CSelo&distinct()",
+        title   = "Hake Abundance",
+        y_label = "mean_cpue (ln(catch+1))",
         skip    = 0,
-        filter  = NULL,
+        filter  = "species_group == \"Hake\"",
         col_t   = "time (UTC)",
-        col_y   = "catch",
+        col_y   = "mean_cpue (ln(catch+1))",
         group_by= NULL
     ),
     error = function(e) e
@@ -35,13 +35,13 @@ tryCatch(
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/FED_Rockfish_Catch.csvp?time%2Ccatch%2Cmaturity%2Carea%2Cstrata&latitude%3E=35.5&latitude%3C=38&catch%3E0&common_name=%22PACIFIC%20SARDINE%22",
-        title   = "Pacific Sardine Abundance",
-        y_label = "Catch",
+        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_EI_FBC.csvp?time%2Cspecies_group%2Cmean_cpue%2CSeup%2CSelo&distinct()",
+        title   = "Sardine Abundance",
+        y_label = "mean_cpue (ln(catch+1))",
         skip    = 0,
-        filter  = NULL,
+        filter  = "species_group == \"Hake\"",
         col_t   = "time (UTC)",
-        col_y   = "catch",
+        col_y   = "mean_cpue (ln(catch+1))",
         group_by= NULL
     ),
     error = function(e) e
@@ -67,13 +67,45 @@ tryCatch(
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/FED_Rockfish_Catch.csvp?time%2Ccatch%2Cmaturity%2Carea%2Cstrata&latitude%3E=35.5&latitude%3C=38&catch%3E0&common_name=%22NORTHERN%20ANCHOVY%22",
-        title   = "Northern Anchovy Abundance",
-        y_label = "Catch",
+        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_EI_FBC.csvp?time%2Cspecies_group%2Cmean_cpue%2CSeup%2CSelo&distinct()",
+        title   = "Anchovy Abundance",
+        y_label = "mean_cpue (ln(catch+1))",
         skip    = 0,
-        filter  = NULL,
+        filter  = "species_group == \"Anchovy\"",
         col_t   = "time (UTC)",
-        col_y   = "catch",
+        col_y   = "mean_cpue (ln(catch+1))",
+        group_by= NULL
+    ),
+    error = function(e) e
+)
+```
+
+```{r}
+tryCatch(
+    plot_timeseries(
+        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_EI_FBC.csvp?time%2Cspecies_group%2Cmean_cpue%2CSeup%2CSelo&distinct()",
+        title   = "Sanddab Abundance",
+        y_label = "mean_cpue (ln(catch+1))",
+        skip    = 0,
+        filter  = "species_group == \"Sanddabs\"",
+        col_t   = "time (UTC)",
+        col_y   = "mean_cpue (ln(catch+1))",
+        group_by= NULL
+    ),
+    error = function(e) e
+)
+```
+
+```{r}
+tryCatch(
+    plot_timeseries(
+        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_EI_FBC.csvp?time%2Cspecies_group%2Cmean_cpue%2CSeup%2CSelo&distinct()",
+        title   = "Rockfish Juveniles Abundance",
+        y_label = "mean_cpue (ln(catch+1))",
+        skip    = 0,
+        filter  = "species_group == \"Rockfish juveniles\"",
+        col_t   = "time (UTC)",
+        col_y   = "mean_cpue (ln(catch+1))",
         group_by= NULL
     ),
     error = function(e) e
