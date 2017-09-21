@@ -19,30 +19,14 @@ library(infographiq)
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "NA",
-        title   = "NA",
-        y_label = "NA",
+        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/FED_Rockfish_Catch.csvp?time%2Ccatch%2Cmaturity%2Carea%2Cstrata&latitude%3E=35.5&latitude%3C=38&catch%3E0&common_name=%22SQUID%22",
+        title   = "Squid Abundance",
+        y_label = "Catch",
         skip    = 0,
         filter  = NULL,
-        col_t   = NULL,
-        col_y   = NULL,
+        col_t   = "time (UTC)",
+        col_y   = "catch",
         group_by= NULL
-    ),
-    error = function(e) e
-)
-```
-
-```{r}
-tryCatch(
-    plot_timeseries(
-        csv_tv  = "",
-        title   = "",
-        y_label = "",
-        skip    = ,
-        filter  = ,
-        col_t   = ,
-        col_y   = ,
-        group_by= 
     ),
     error = function(e) e
 )
