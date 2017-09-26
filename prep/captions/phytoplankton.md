@@ -1,0 +1,1 @@
+Phytoplankton, microscopic in size with a massive impact. They provide nearly half of the earth's atmospheric oxygen and consume carbon dioxide on a scale equivalent to forests. At the foundation of aquatic food webs, they are critical to the health of the ocean. Toxic phytoplankton have an impact on public health and commercial fisheries.
