@@ -20,7 +20,7 @@ library(infographiq)
 tryCatch(
     plot_timeseries(
         csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_AC.csvp?time%2Csalmon_coastwide&time%3E=1980-01-01&time%3C=2014-01-01",
-        title   = "Salmon Landings (coastwide, mostly chinook)",
+        title   = "Salmon Landings (coastwide mostly chinook)",
         y_label = "1000s metric tons",
         skip    = 0,
         filter  = NULL,

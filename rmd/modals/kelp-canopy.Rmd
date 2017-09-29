@@ -15,6 +15,8 @@ library(infographiq)
 ```
 
 <base target="_parent">
+[Santa Barbara Coastal LTER](http://sbc.lternet.edu/cgi-bin/showDataset.cgi?docid=knb-lter-sbc.54)
+A time series of canopy biomass of the giant kelp, Macrocystis pyrifera, derived from LANDSAT 5 Thematic Mapper satellite imagery. The kelp canopy is composed of the portions of fronds floating on the surface of the water. Biomass data (wet weight, kg) are given for individual 30 x 30 meter pixels in the coastal areas extending from near Pt. Reyes, California, to Punta Abreojos, Baja California Sur, Mexico, including the Northern and Southern Channel Islands.
 
 ```{r}
 tryCatch(
@@ -47,5 +49,3 @@ tryCatch(
     error = function(e) e
 )
 ```
-[Santa Barbara Coastal LTER](http://sbc.lternet.edu/cgi-bin/showDataset.cgi?docid=knb-lter-sbc.54)
-A time series of canopy biomass of the giant kelp, Macrocystis pyrifera, derived from LANDSAT 5 Thematic Mapper satellite imagery. The kelp canopy is composed of the portions of fronds floating on the surface of the water. Biomass data (wet weight, kg) are given for individual 30 x 30 meter pixels in the coastal areas extending from near Pt. Reyes, California, to Punta Abreojos, Baja California Sur, Mexico, including the Northern and Southern Channel Islands.
