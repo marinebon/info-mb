@@ -19,7 +19,7 @@ library(infographiq)
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csvp?time,mean_growth_rate",
+        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csvp?time%2Cmean_growth_rate",
         title   = "Female sea lion pup growth rate",
         y_label = "Mean growth rate",
         skip    = 0,
@@ -35,7 +35,7 @@ tryCatch(
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csvp?time,mean_weight",
+        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csvp?time%2Cmean_weight",
         title   = "Female sea lion pup weight index",
         y_label = "Mean pup weight",
         skip    = 0,
@@ -51,7 +51,7 @@ tryCatch(
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csvp?time,live_pup_count",
+        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csvp?time%2Clive_pup_count",
         title   = "Sea lion pup count, San Miguel Isl.",
         y_label = "Average live pup count",
         skip    = 0,
