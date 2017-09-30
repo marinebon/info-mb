@@ -15,7 +15,6 @@ library(infographiq)
 ```
 
 <base target="_parent">
-Calculations:  Abundance indices are calculated as longterm anomalies observed mean/standard deviation) of annual escapement by natural origin Fall Run Chinook to the Klamath and Trinity River systems. Data series for multiple subpopulations were standardized by subtracting the series mean and dividing by the series standard deviation. If a consolidated index for the stock was needed we computed an annual weighted average of the standardized series, with weights proportional to the average abundance for each subpopulation. NOAA NWFSC/SWFSC
 
 ```{r}
 tryCatch(

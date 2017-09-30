@@ -15,7 +15,6 @@ library(infographiq)
 ```
 
 <base target="_parent">
-The Fisheries Ecology Division (FED, https://swfsc.noaa.gov/GroundfishAnalysis/) of the Southwest Fisheries Science Center (SWFSC)  midwater trawl survey off central California. Fisheries Ecology Division/SWFSC/NOAA
 
 ```{r}
 tryCatch(
@@ -32,7 +31,8 @@ tryCatch(
     error = function(e) e
 )
 ```
-The Fisheries Ecology Division (FED, https://swfsc.noaa.gov/GroundfishAnalysis/) of the Southwest Fisheries Science Center (SWFSC)  midwater trawl survey off central California. Fisheries Ecology Division/SWFSC/NOAA
+Gelatinous species: Pyrosoma, Salp, Thetys Salp, Heteropd<br>
+Jelly species: Fried Egg Jelly, Sea Nettle, Purple-striped Jelly, Moon Jelly.
 
 ```{r}
 tryCatch(
@@ -49,5 +49,4 @@ tryCatch(
     error = function(e) e
 )
 ```
-Gelatinous species: Pyrosoma, Salp, Thetys Salp, Heteropd<br>
-Jelly species: Fried Egg Jelly, Sea Nettle, Purple-striped Jelly, Moon Jelly.
+The Fisheries Ecology Division (FED, https://swfsc.noaa.gov/GroundfishAnalysis/) of the Southwest Fisheries Science Center (SWFSC)  midwater trawl survey off central California. Fisheries Ecology Division/SWFSC/NOAA
