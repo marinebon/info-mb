@@ -33,3 +33,22 @@ tryCatch(
     error = function(e) e
 )
 ```
+<<<<<<< HEAD
+=======
+
+```{r}
+tryCatch(
+    plot_timeseries(
+        csv_tv  = "",
+        title   = "",
+        y_label = "",
+        skip    = ,
+        filter  = ,
+        col_t   = ,
+        col_y   = ,
+        group_by= 
+    ),
+    error = function(e) e
+)
+```
+>>>>>>> 2ae8622b88e601235150ea4a8e1c2e21c5e7c596
