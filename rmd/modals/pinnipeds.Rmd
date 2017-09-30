@@ -52,7 +52,7 @@ tryCatch(
 tryCatch(
     plot_timeseries(
         csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csvp?time%2Clive_pup_count",
-        title   = "Sea lion pup count, San Miguel Isl.",
+        title   = "Sea lion pup count San Miguel Isl.",
         y_label = "Average live pup count",
         skip    = 0,
         filter  = NULL,
