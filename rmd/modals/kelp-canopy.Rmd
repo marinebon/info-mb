@@ -33,8 +33,6 @@ tryCatch(
     error = function(e) e
 )
 ```
-<<<<<<< HEAD
-=======
 
 ```{r}
 tryCatch(
@@ -51,4 +49,3 @@ tryCatch(
     error = function(e) e
 )
 ```
->>>>>>> 2ae8622b88e601235150ea4a8e1c2e21c5e7c596

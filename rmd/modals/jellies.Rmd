@@ -19,13 +19,13 @@ library(infographiq)
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_EI_JELLY_CC.csvp?time%2Cspecies_group%2Cabundance&time%3E=1990-01-01T00%3A00%3A00Z&time%3C=2015-01-01T00%3A00%3A00Z",
+        csv_tv  = "https://github.com/marinebon/info-mb/blob/master/prep/data/forage_inverts/CCIEA_EI_jelly_CC.csv",
         title   = "Chrysaora and Aurelia Abundance",
         y_label = "log",
         skip    = 0,
         filter  = NULL,
-        col_t   = "time (UTC)",
-        col_y   = "abundance (ln(catch+1))",
+        col_t   = "yr",
+        col_y   = "abundance",
         group_by= NULL
     ),
     error = function(e) e
