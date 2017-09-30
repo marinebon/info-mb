@@ -19,7 +19,7 @@ library(infographiq)
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "https://github.com/marinebon/info-mb/blob/master/prep/data/forage_inverts/CCIEA_EI_jelly_CC.csv",
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/forage_inverts/CCIEA_EI_jelly_CC.csv",
         title   = "Chrysaora and Aurelia Abundance",
         y_label = "log",
         skip    = 0,

@@ -19,39 +19,7 @@ library(infographiq)
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_EI_FBC.csvp?time%2Cspecies_group%2Cmean_cpue%2CSeup%2CSelo&distinct()",
-        title   = "Market Squid Abundance",
-        y_label = "mean_cpue (ln(catch+1))",
-        skip    = 0,
-        filter  = "species_group == \"Market squid\"",
-        col_t   = "time (UTC)",
-        col_y   = "mean_cpue (ln(catch+1))",
-        group_by= NULL
-    ),
-    error = function(e) e
-)
-```
-
-```{r}
-tryCatch(
-    plot_timeseries(
-        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_EI_FBC.csvp?time%2Cspecies_group%2Cmean_cpue%2CSeup%2CSelo&distinct()",
-        title   = "Krill Abundance",
-        y_label = "mean_cpue (ln(catch+1))",
-        skip    = 0,
-        filter  = "species_group == \"Krill\"",
-        col_t   = "time (UTC)",
-        col_y   = "mean_cpue (ln(catch+1))",
-        group_by= NULL
-    ),
-    error = function(e) e
-)
-```
-
-```{r}
-tryCatch(
-    plot_timeseries(
-        csv_tv  = "https://github.com/marinebon/info-mb/blob/master/prep/data/fish/FED_Rockfish_Forage_Catch_ALL_year_sums.csv",
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/fish/FED_Rockfish_Forage_Catch_ALL_year_sums.csv",
         title   = "Forage & Rockfish (YOY adults and unknown) Abundance",
         y_label = "Catch",
         skip    = 0,
@@ -67,7 +35,7 @@ tryCatch(
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "https://github.com/marinebon/info-mb/blob/master/prep/data/fish/FED_Forage_Catch_A_UNK_year_sums.csv",
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/fish/FED_Forage_Catch_A_UKN_year_sums.csv",
         title   = "Forage Fish (adults) Abundance",
         y_label = "Catch",
         skip    = 0,
