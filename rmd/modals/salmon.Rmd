@@ -15,29 +15,31 @@ library(infographiq)
 ```
 
 <base target="_parent">
+Calculations:  Abundance indices are calculated as longterm anomalies observed mean/standard deviation) of annual escapement by natural origin Fall Run Chinook to the Klamath and Trinity River systems. Data series for multiple subpopulations were standardized by subtracting the series mean and dividing by the series standard deviation. If a consolidated index for the stock was needed we computed an annual weighted average of the standardized series, with weights proportional to the average abundance for each subpopulation. NOAA NWFSC/SWFSC
 
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_AC.csvp?time%2Csalmon_coastwide&time%3E=1980-01-01&time%3C=2014-01-01",
-        title   = "Salmon Landings (coastwide mostly chinook)",
-        y_label = "1000s metric tons",
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/fish/CCIEA_Chinook_salmon_CC.csv",
+        title   = "Chinook Salmon Abundance",
+        y_label = "Abundance anomaly (observed mean/standard deviation)",
         skip    = 0,
         filter  = NULL,
-        col_t   = "time (UTC)",
-        col_y   = "salmon_coastwide (1000s metric tons)",
+        col_t   = "yr",
+        col_y   = "abundance",
         group_by= NULL
     ),
     error = function(e) e
 )
 ```
+Calculations:  Abundance indices are calculated as longterm anomalies observed mean/standard deviation) of annual escapement by natural origin Fall Run Chinook to the Klamath and Trinity River systems. Data series for multiple subpopulations were standardized by subtracting the series mean and dividing by the series standard deviation. If a consolidated index for the stock was needed we computed an annual weighted average of the standardized series, with weights proportional to the average abundance for each subpopulation. NOAA NWFSC/SWFSC
 
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_SM_CA_CO_ABND.csvp?time%2Cpopulation%2Cabundance&population=%22CaCoastal%22&distinct()",
+        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_SM_CA_CO_ABND.csvp?time%2Cpopulation%2Cabundance&time%3E=1987-01-01&time%3C=2015-01-01T00%3A00%3A00Z&population=%22CaCoastal%22",
         title   = "Coho Salmon Abundance",
-        y_label = "abundance",
+        y_label = "Abundance anomaly (observed mean/standard deviation)",
         skip    = 0,
         filter  = NULL,
         col_t   = "time (UTC)",
@@ -47,16 +49,17 @@ tryCatch(
     error = function(e) e
 )
 ```
+The Fisheries Ecology Division (FED, https://swfsc.noaa.gov/GroundfishAnalysis/) of the Southwest Fisheries Science Center (SWFSC)  midwater trawl survey off central California. Fisheries Ecology Division/SWFSC/NOAA
 
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/FED_Rockfish_Catch.csvp?time%2Ccatch%2Cmaturity%2Carea%2Cstrata&latitude%3E=35.5&latitude%3C=38&catch%3E0&common_name=%22KING%20SALMON%22",
-        title   = "King Salmon Abundance",
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/fish/FED_King_Salmon_year_sums.csv",
+        title   = "King Salmon Catch",
         y_label = "Catch",
         skip    = 0,
         filter  = NULL,
-        col_t   = "time (UTC)",
+        col_t   = "yr",
         col_y   = "catch",
         group_by= NULL
     ),

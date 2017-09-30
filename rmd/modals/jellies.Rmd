@@ -15,19 +15,39 @@ library(infographiq)
 ```
 
 <base target="_parent">
+The Fisheries Ecology Division (FED, https://swfsc.noaa.gov/GroundfishAnalysis/) of the Southwest Fisheries Science Center (SWFSC)  midwater trawl survey off central California. Fisheries Ecology Division/SWFSC/NOAA
 
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/forage_inverts/CCIEA_EI_jelly_CC.csv",
-        title   = "Chrysaora and Aurelia Abundance",
-        y_label = "log",
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/forage_inverts/FED_Gelatinous_catch.csv",
+        title   = "Gelatinous Catch",
+        y_label = "Catch",
         skip    = 0,
         filter  = NULL,
         col_t   = "yr",
-        col_y   = "abundance",
+        col_y   = "catch",
         group_by= NULL
     ),
     error = function(e) e
 )
 ```
+The Fisheries Ecology Division (FED, https://swfsc.noaa.gov/GroundfishAnalysis/) of the Southwest Fisheries Science Center (SWFSC)  midwater trawl survey off central California. Fisheries Ecology Division/SWFSC/NOAA
+
+```{r}
+tryCatch(
+    plot_timeseries(
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/forage_inverts/FED_Jellies_catch..csv",
+        title   = "Jellies Catch",
+        y_label = "Catch",
+        skip    = 0,
+        filter  = NULL,
+        col_t   = "yr",
+        col_y   = "catch",
+        group_by= NULL
+    ),
+    error = function(e) e
+)
+```
+Gelatinous species: Pyrosoma, Salp, Thetys Salp, Heteropd<br>
+Jelly species: Fried Egg Jelly, Sea Nettle, Purple-striped Jelly, Moon Jelly.
