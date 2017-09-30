@@ -1,7 +1,7 @@
 svg,svg_id,label,status_text,status_color,modal_before,modal_after
 pelagic.svg,phytoplankton,Phytoplankton (Primary producers),,#1e3b1a,prep/captions/phytoplankton.md,prep/captions/phytoplankton_bottom.md
 pelagic.svg,copepods,Copepods (Secondary producers),,#2b2b2b,,
-pelagic.svg,jellies,Gelatinous zooplankton  (Secondary producers),,#2b2b2b,,
+pelagic.svg,jellies,Gelatinous zooplankton  (Secondary producers),,#2b2b2b,,prep/captions/gelatinous_bottom.md
 pelagic.svg,forage-invertss,Forage Invertebrates,,#2b2b2b,,
 pelagic.svg,midwater-larval-fish,Midwater Larval Fish,,#2b2b2b,,
 pelagic.svg,forage-fish,Forage Fish,,#2b2b2b,,
