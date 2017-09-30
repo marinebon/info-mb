@@ -2,7 +2,6 @@ svg,svg_id,label,status_text,status_color,modal_before,modal_after
 pelagic.svg,pinnipeds,Pinnipeds,,,,
 pelagic.svg,copepods,Copepods (Secondary producers),,#2b2b2b,,
 pelagic.svg,jellies,Gelatinous zooplankton  (Secondary producers),,#2b2b2b,,
-pelagic.svg,squid,Squid (Secondary producers),,#2b2b2b,,
 pelagic.svg,forage-invertss,Forage Invertebrates,,#2b2b2b,,
 pelagic.svg,midwater-larval-fish,Midwater Larval Fish,,#2b2b2b,,
 pelagic.svg,forage-fish,Forage Fish,,#2b2b2b,,
