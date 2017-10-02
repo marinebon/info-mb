@@ -37,7 +37,7 @@ tryCatch(
 tryCatch(
     plot_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/SDG14_MB_Monique.csv",
-        title   = "Pennate Diatom Abundance",
+        title   = "Percent Diatom Abundance",
         y_label = "%",
         skip    = 0,
         filter  = NULL,
@@ -53,7 +53,7 @@ tryCatch(
 tryCatch(
     plot_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/SDG14_MB_Monique.csv",
-        title   = "Centric Diatom Abundance",
+        title   = "Percent Dinoflagellate Abundance",
         y_label = "%",
         skip    = 0,
         filter  = NULL,
@@ -69,7 +69,7 @@ tryCatch(
 tryCatch(
     plot_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/SDG14_MB_Monique.csv",
-        title   = "Autotrophic Dinoflagellates Abundance",
+        title   = "Percent Picoplankton Abundance",
         y_label = "%",
         skip    = 0,
         filter  = NULL,
