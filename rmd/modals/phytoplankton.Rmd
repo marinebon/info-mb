@@ -24,7 +24,7 @@ tryCatch(
         title   = "Phytoplankton Biomass",
         y_label = "mg C m-3",
         skip    = 0,
-        filter  = NULL,
+        filter  = "year > 1989",
         col_t   = "year",
         col_y   = "biomass",
         group_by= NULL
@@ -36,13 +36,13 @@ tryCatch(
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/SDG14_MB_Monique.csv",
-        title   = "Percent Diatom Abundance",
-        y_label = "%",
+        csv_tv  = "prep/plot_caption/pennate_diatoms.md",
+        title   = "Pennate Diatom Abundance",
+        y_label = "mg C m-3",
         skip    = 0,
         filter  = NULL,
-        col_t   = "year",
-        col_y   = "pct_diat",
+        col_t   = "yr",
+        col_y   = "p_abun",
         group_by= NULL
     ),
     error = function(e) e
@@ -52,13 +52,13 @@ tryCatch(
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/SDG14_MB_Monique.csv",
-        title   = "Percent Dinoflagellate Abundance",
-        y_label = "%",
+        csv_tv  = "prep/plot_caption/centric_diatoms.md",
+        title   = "Centric Diatom Abundance",
+        y_label = "mg C m-3",
         skip    = 0,
         filter  = NULL,
-        col_t   = "year",
-        col_y   = "pct_dino",
+        col_t   = "yr",
+        col_y   = "c_abun",
         group_by= NULL
     ),
     error = function(e) e
@@ -68,16 +68,16 @@ tryCatch(
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/SDG14_MB_Monique.csv",
-        title   = "Percent Picoplankton Abundance",
-        y_label = "%",
+        csv_tv  = "prep/plot_caption/dinoflagellates.md",
+        title   = "Autotrophic Dinoflagellates Abundance",
+        y_label = "mg C m-3",
         skip    = 0,
         filter  = NULL,
-        col_t   = "year",
-        col_y   = "pct_pico",
+        col_t   = "yr",
+        col_y   = "a_abun",
         group_by= NULL
     ),
     error = function(e) e
 )
 ```
-<p>Some of the first principles in biological oceanography are that phytoplankton primary production supports the pelagic and benthic ecosystems and determines the rate of accumulation of organic material in the sediments. The so-called biological “pump” moves the energy harvested from sunlight by phytoplankton to the deep ocean. Phytoplankton, because they exist at the ocean-atmosphere interface, are directly affected by changes in climate.
+<p>Monterey Bay Aquarium Research Institute (MBARI) Biological Oceanography Group, Francisco Chavez. Epifluorescent microscopy counts; units have been converted to mg Carbon/m3. http://www.mbari.org
