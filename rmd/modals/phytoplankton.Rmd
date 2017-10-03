@@ -32,7 +32,6 @@ tryCatch(
     error = function(e) e
 )
 ```
- A warm water event known as the "Blob", caused a wide-spread bloom of domoic acid-producing pennate diatoms and led to the closure of the California Dungeness crab season in the Fall of 2015.
 
 ```{r}
 tryCatch(
@@ -49,8 +48,6 @@ tryCatch(
     error = function(e) e
 )
 ```
-Centric diatoms are often thought of as signature or "keystone" phytoplankton species within upwelling systems. Centrics were abundant from 1998-2002, but in spring 2003 became less so. Several months following the centric decrease, dinoflagellates bloomed instead and their numbers remain high. Overall phytoplankton biomass remained high, but the dominant taxa changed, and must have affected fish and other higher-trophic level organisms in as yet unexplored ways.
-
 
 ```{r}
 tryCatch(
@@ -67,7 +64,6 @@ tryCatch(
     error = function(e) e
 )
 ```
-In 2003, dinoflagellates replaced diatoms as the dominant phytoplankton taxon in Monterey Bay. This shift in "keystone" phytoplankon is associated with an increase in near surface stratification and a decrease in upwelling-favorable winds. Some species of dinoflagellates are known to produce toxic phytoplankton blooms known as "red tide".
 
 ```{r}
 tryCatch(
