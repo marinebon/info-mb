@@ -37,12 +37,12 @@ tryCatch(
 tryCatch(
     plot_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/efm_diatoms_mb_by_year.csv",
-        title   = "Pennate Diatom Abundance",
+        title   = "Pennate Diatom Average Per Year",
         y_label = "mg C m-3",
         skip    = 0,
         filter  = NULL,
         col_t   = "yr",
-        col_y   = "p_abun",
+        col_y   = "pennate",
         group_by= NULL
     ),
     error = function(e) e
@@ -53,12 +53,12 @@ tryCatch(
 tryCatch(
     plot_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/efm_diatoms_mb_by_year.csv",
-        title   = "Centric Diatom Abundance",
+        title   = "Centric Diatom Average Per Year",
         y_label = "mg C m-3",
         skip    = 0,
         filter  = NULL,
         col_t   = "yr",
-        col_y   = "c_abun",
+        col_y   = "centric",
         group_by= NULL
     ),
     error = function(e) e
@@ -69,12 +69,12 @@ tryCatch(
 tryCatch(
     plot_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/efm_dinos_mb_by_year.csv",
-        title   = "Autotrophic Dinoflagellates Abundance",
+        title   = "Autotrophic Dinoflagellates Average Per Year",
         y_label = "mg C m-3",
         skip    = 0,
         filter  = NULL,
         col_t   = "yr",
-        col_y   = "a_abun",
+        col_y   = "adinos",
         group_by= NULL
     ),
     error = function(e) e
