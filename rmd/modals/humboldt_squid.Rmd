@@ -1,0 +1,34 @@
+---
+output:
+html_document:
+self_contained: false
+lib_dir: "libs"
+fig_height: 2
+fig_width: 4
+params:
+element: "humboldt_squid"
+---
+
+```{r, echo=FALSE, message=F, warning=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F)
+library(infographiq)
+```
+
+<base target="_parent">
+Humboldt squid, Dosidicus gigas, sightings from MBARI's ROV video surveys in Monterey Bay. Video transects occur on a monthly basis. Monterey Bay Aquarium Research Institute http://www.mbari.org/
+
+```{r}
+tryCatch(
+    plot_timeseries(
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/dosidicus/MBARI_ROV_dosid.csv",
+        title   = "Humboldt Squid Sightings",
+        y_label = "Sightings",
+        skip    = 0,
+        filter  = NULL,
+        col_t   = "year",
+        col_y   = "count",
+        group_by= NULL
+    ),
+    error = function(e) e
+)
+```
