@@ -7,11 +7,11 @@ pelagic.svg,forage-invertss,Forage Invertebrates,,#2b2b2b,,prep/plot_caption/for
 pelagic.svg,biodiversity,Biodiversity of Forage,,#2b2b2b,,
 pelagic.svg,pinnipeds,California Sea Lion,,#2b2b2b,,prep/captions/pnniped_data_attrb.md
 pelagic.svg,whales,Whales,,#2b2b2b,,
-pelagic.svg,eDNA,Environmental DNA,,#2b2b2b,,
+pelagic.svg,eDNA,Environmental DNA,,#2b2b2b,prep/captions/edna_intro.md,prep/captions/eDNA_attribute.md
 pelagic.svg,copepods,Copepods,,#2b2b2b,,
-pelagic.svg,jellies,Gelatinous zooplankton  (Secondary producers),,#2b2b2b,,prep/plot_caption/FED_ack.md
+pelagic.svg,jellies,Gelatinous zooplankton,,#2b2b2b,,prep/plot_caption/FED_ack.md
 pelagic.svg,midwater-larval-fish,Midwater Larval Fish,,#2b2b2b,,
-pelagic.svg,humboldt_squid,Humboldt Squid,,#2b2b2b,,
+pelagic.svg,humboldt_squid,Humboldt Squid,,#2b2b2b,,prep/plot_caption/ROV_ack.md
 pelagic.svg,salmon,Salmon,,#2b2b2b,,
 pelagic.svg,leatherbacks,Leatherback Turtles,,#2b2b2b,,
 pelagic.svg,seabirds,Nesting Seabirds,,#2b2b2b,,

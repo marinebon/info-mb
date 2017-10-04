@@ -15,35 +15,56 @@ library(infographiq)
 ```
 
 <base target="_parent">
+Using seawater collected in the MBNMS, environmental DNA (eDNA) metabarcoding is used to evaluate biodiversity.  eDNA reads can be used as a qualitative and quantitative proxy for marine assemblages in a variety of oceanic habitats. Metabarcoding is a method of DNA barcoding that uses universal PCR (polymerase chain reaction) primers, 12S, 16S, 18S, and COI to identify DNA from a mixture of organisms.
+The metabarcode primer 12S is used in the identification of invertebrates, such as fish, whales, seabirds and otters.
 
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "NA",
-        title   = "NA",
-        y_label = "NA",
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/eDNA/eDNA_richness_12S.csv",
+        title   = "Vertebrate 12S Observed Richness",
+        y_label = "Observed Richness",
         skip    = 0,
-        filter  = NULL,
-        col_t   = NULL,
-        col_y   = NULL,
+        filter  = "d_year > 2006",
+        col_t   = "d_year",
+        col_y   = "binsum_12S",
         group_by= NULL
     ),
     error = function(e) e
 )
 ```
+The metabarcode primer 18S is used primarily to identify phytoplankton, such as centric diatoms or toxic species of pseudo nitzschia.
 
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "",
-        title   = "",
-        y_label = "",
-        skip    = ,
-        filter  = ,
-        col_t   = ,
-        col_y   = ,
-        group_by= 
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/eDNA/eDNA_richness_12S.csv",
+        title   = "Phytoplankton 18S Observed Richness",
+        y_label = "Observed Richness",
+        skip    = 0,
+        filter  = "b_year > 2006",
+        col_t   = "b_year",
+        col_y   = "binsum",
+        group_by= NULL
     ),
     error = function(e) e
 )
 ```
+The metabarcode primer COI identifies both phytoplankton and zooplankton, such as krill and copepods.
+
+```{r}
+tryCatch(
+    plot_timeseries(
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/eDNA/eDNA_richness_12S.csv",
+        title   = "Vertebrate and Invertebrate COI Observed Richness",
+        y_label = "Observed Richness",
+        skip    = 0,
+        filter  = "c_year > 2006",
+        col_t   = "c_year",
+        col_y   = "binsum_COI",
+        group_by= NULL
+    ),
+    error = function(e) e
+)
+```
+Under the auspices of the Marine Biodiversity Observation Network (MBON), MBARI, Stanford and USF researchers are using eDNA to assess biodiversity in the MBNMS. The U.S. MBON projects are funded under the National Ocean Partnership Program (NOPP RFP NOAA-NOS-IOOS-2014-2003803) in partnership between NOAA, BOEM, and NASA, with the U.S. Integrated Ocean Observing System (U.S. IOOS) program pioneering the implementation. Seawater is collect from CTD bottles at various locations and depths. http://www.marinebon.org/genomics.html
