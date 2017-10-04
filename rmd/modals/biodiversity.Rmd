@@ -19,13 +19,13 @@ library(infographiq)
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "NA",
-        title   = "NA",
-        y_label = "NA",
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/fish/Fish_diversity_richness.csv",
+        title   = "Diversity of all Forage (111 taxa)",
+        y_label = "Diversity (Shannon-Weaver)",
         skip    = 0,
         filter  = NULL,
-        col_t   = NULL,
-        col_y   = NULL,
+        col_t   = "year",
+        col_y   = "ALLDiv",
         group_by= NULL
     ),
     error = function(e) e
@@ -35,14 +35,78 @@ tryCatch(
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "",
-        title   = "",
-        y_label = "",
-        skip    = ,
-        filter  = ,
-        col_t   = ,
-        col_y   = ,
-        group_by= 
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/fish/Fish_diversity_richness.csv",
+        title   = "Diversity of Juvenile Rockfish and Groundfish (53 taxa)",
+        y_label = "Diversity (Shannon-Weaver)",
+        skip    = 0,
+        filter  = NULL,
+        col_t   = "year",
+        col_y   = "YOYDiv",
+        group_by= NULL
+    ),
+    error = function(e) e
+)
+```
+
+```{r}
+tryCatch(
+    plot_timeseries(
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/fish/Fish_diversity_richness.csv",
+        title   = "Diversity of Other Forage (49 Taxa)",
+        y_label = "Diversity (Shannon-Weaver)",
+        skip    = 0,
+        filter  = NULL,
+        col_t   = "year",
+        col_y   = "FORDiv",
+        group_by= NULL
+    ),
+    error = function(e) e
+)
+```
+
+```{r}
+tryCatch(
+    plot_timeseries(
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/fish/Fish_diversity_richness.csv",
+        title   = "Richness of all Forage (111 taxa)",
+        y_label = "Average Species Richness (number of species)",
+        skip    = 0,
+        filter  = NULL,
+        col_t   = "year",
+        col_y   = "ALLRich",
+        group_by= NULL
+    ),
+    error = function(e) e
+)
+```
+
+```{r}
+tryCatch(
+    plot_timeseries(
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/fish/Fish_diversity_richness.csv",
+        title   = "Richness of Juvenile Rockfish and Groundfish (53 taxa)",
+        y_label = "Average Species Richness (number of species)",
+        skip    = 0,
+        filter  = NULL,
+        col_t   = "year",
+        col_y   = "YOYRich",
+        group_by= NULL
+    ),
+    error = function(e) e
+)
+```
+
+```{r}
+tryCatch(
+    plot_timeseries(
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/fish/Fish_diversity_richness.csv",
+        title   = "Richness of Other Forage (49 Taxa)",
+        y_label = "Average Species Richness (number of species)",
+        skip    = 0,
+        filter  = NULL,
+        col_t   = "year",
+        col_y   = "FORRich",
+        group_by= NULL
     ),
     error = function(e) e
 )
