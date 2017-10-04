@@ -1,1 +1,2 @@
 Using seawater collected in the MBNMS, environmental DNA (eDNA) metabarcoding is used to evaluate biodiversity.  eDNA reads can be used as a qualitative and quantitative proxy for marine assemblages in a variety of oceanic habitats. Metabarcoding is a method of DNA barcoding that uses universal PCR (polymerase chain reaction) primers, 12S, 16S, 18S, and COI to identify DNA from a mixture of organisms.
+<p></p>
