@@ -16,6 +16,7 @@ library(infographiq)
 
 <base target="_parent">
 Using seawater collected in the MBNMS, environmental DNA (eDNA) metabarcoding is used to evaluate biodiversity.  eDNA reads can be used as a qualitative and quantitative proxy for marine assemblages in a variety of oceanic habitats. Metabarcoding is a method of DNA barcoding that uses universal PCR (polymerase chain reaction) primers, 12S, 16S, 18S, and COI to identify DNA from a mixture of organisms.
+<p></p>
 The metabarcode primer 12S is used in the identification of invertebrates, such as fish, whales, seabirds and otters.
 
 ```{r}
@@ -38,7 +39,7 @@ The metabarcode primer 18S is used primarily to identify phytoplankton, such as 
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/eDNA/eDNA_richness_12S.csv",
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/eDNA/eDNA_richness_18S.csv",
         title   = "Phytoplankton 18S Observed Richness",
         y_label = "Observed Richness",
         skip    = 0,
@@ -55,7 +56,7 @@ The metabarcode primer COI identifies both phytoplankton and zooplankton, such a
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/eDNA/eDNA_richness_12S.csv",
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/eDNA/eDNA_richness_COI.csv",
         title   = "Vertebrate and Invertebrate COI Observed Richness",
         y_label = "Observed Richness",
         skip    = 0,
