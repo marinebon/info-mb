@@ -28,7 +28,7 @@ tryCatch(
         skip    = 0,
         filter  = "d_year > 2006",
         col_t   = "d_year",
-        col_y   = "binsum_12S",
+        col_y   = "x",
         group_by= NULL
     ),
     error = function(e) e
@@ -45,7 +45,7 @@ tryCatch(
         skip    = 0,
         filter  = "b_year > 2006",
         col_t   = "b_year",
-        col_y   = "binsum",
+        col_y   = "x",
         group_by= NULL
     ),
     error = function(e) e
@@ -62,7 +62,7 @@ tryCatch(
         skip    = 0,
         filter  = "c_year > 2006",
         col_t   = "c_year",
-        col_y   = "binsum_COI",
+        col_y   = "x",
         group_by= NULL
     ),
     error = function(e) e
