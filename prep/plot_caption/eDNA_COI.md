@@ -1,1 +1,1 @@
-The metabarcode primer COI identifies both phytoplankton and zooplankton, such as krill and copepods.
+The metabarcode COI identifies both phytoplankton and zooplankton, such as diatoms, krill, copepods, and jellies.
