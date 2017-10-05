@@ -20,7 +20,7 @@ library(infographiq)
 tryCatch(
     plot_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/fish/CCIEA_Chinook_salmon_CC.csv",
-        title   = "Chinook Salmon Abundance",
+        title   = "Chinook Salmon (<i>Oncorhynchus tshawytscha</i> Abundance off California",
         y_label = "Abundance anomaly (observed mean/standard deviation)",
         skip    = 0,
         filter  = NULL,
@@ -37,29 +37,12 @@ Calculations:  Abundance indices are calculated as longterm anomalies observed m
 tryCatch(
     plot_timeseries(
         csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_SM_CA_CO_ABND.csvp?time%2Cpopulation%2Cabundance&time%3E=1987-01-01&time%3C=2015-01-01T00%3A00%3A00Z&population=%22CaCoastal%22",
-        title   = "Coho Salmon Abundance",
+        title   = "Coho Salmon (<i>Oncorhynchus kisutch</i> Abundance off California",
         y_label = "Abundance anomaly (observed mean/standard deviation)",
         skip    = 0,
         filter  = NULL,
         col_t   = "time (UTC)",
         col_y   = "abundance",
-        group_by= NULL
-    ),
-    error = function(e) e
-)
-```
-The Fisheries Ecology Division (FED, https://swfsc.noaa.gov/GroundfishAnalysis/) of the Southwest Fisheries Science Center (SWFSC)  midwater trawl survey off central California. Fisheries Ecology Division/SWFSC/NOAA
-
-```{r}
-tryCatch(
-    plot_timeseries(
-        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/fish/FED_King_Salmon_year_sums.csv",
-        title   = "King Salmon Catch",
-        y_label = "Catch",
-        skip    = 0,
-        filter  = NULL,
-        col_t   = "yr",
-        col_y   = "catch",
         group_by= NULL
     ),
     error = function(e) e

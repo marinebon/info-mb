@@ -15,15 +15,16 @@ library(infographiq)
 ```
 
 <base target="_parent">
+Though present in the area, some key forage species - anchovy and krill - had low abundance or unusual regional abundance patterns leading to impacts to their predators.
 
 ```{r}
 tryCatch(
     plot_timeseries(
         csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_EI_FBC.csvp?time%2Cspecies_group%2Cmean_cpue%2CSeup%2CSelo&distinct()",
-        title   = "Market Squid Abundance",
-        y_label = "mean_cpue (ln(catch+1))",
+        title   = "Krill  (<i>Euphausid spp.</i>) Abundance off Central California",
+        y_label = "Average Abundance catch per unit effort (ln(catch+1))",
         skip    = 0,
-        filter  = "species_group == \"Market squid\"",
+        filter  = "species_group == \"Krill\"",
         col_t   = "time (UTC)",
         col_y   = "mean_cpue (ln(catch+1))",
         group_by= NULL
@@ -36,10 +37,10 @@ tryCatch(
 tryCatch(
     plot_timeseries(
         csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_EI_FBC.csvp?time%2Cspecies_group%2Cmean_cpue%2CSeup%2CSelo&distinct()",
-        title   = "Krill Abundance",
-        y_label = "mean_cpue (ln(catch+1))",
+        title   = "Market Squid  (<i>Loligo opalescens</i>) Abundance off Central California",
+        y_label = "Average Abundance catch per unit effort (ln(catch+1))",
         skip    = 0,
-        filter  = "species_group == \"Krill\"",
+        filter  = "species_group == \"Market squid\"",
         col_t   = "time (UTC)",
         col_y   = "mean_cpue (ln(catch+1))",
         group_by= NULL

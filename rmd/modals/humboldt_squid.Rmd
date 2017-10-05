@@ -20,8 +20,8 @@ library(infographiq)
 tryCatch(
     plot_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/dosidicus/MBARI_ROV_dosid.csv",
-        title   = "Humboldt Squid Sightings",
-        y_label = "Sightings",
+        title   = "Humboldt Squid (<i>Dosidicus gigas</i>) Video Transect Sightings in Monterey Bay",
+        y_label = "Squid Sightings (number of species)",
         skip    = 0,
         filter  = NULL,
         col_t   = "year",

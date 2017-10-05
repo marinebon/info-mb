@@ -15,29 +15,14 @@ library(infographiq)
 ```
 
 <base target="_parent">
-
-```{r}
-tryCatch(
-    plot_timeseries(
-        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csvp?time%2Cmean_growth_rate",
-        title   = "Female sea lion pup growth rate",
-        y_label = "Mean growth rate",
-        skip    = 0,
-        filter  = NULL,
-        col_t   = "time (UTC)",
-        col_y   = "mean_growth_rate (kg/day)",
-        group_by= NULL
-    ),
-    error = function(e) e
-)
-```
+Reduced amount of key forage contributed to low reproduction and high stranding rates for California sea lions and some seabirds. NOAA Fisheries declared a California Sea Lion Unusual Mortality Event in California due to the high numbers of strandings throughout the state.
 
 ```{r}
 tryCatch(
     plot_timeseries(
         csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csvp?time%2Cmean_weight",
         title   = "Female sea lion pup weight index",
-        y_label = "Mean pup weight",
+        y_label = "Mean pup weight (kg)",
         skip    = 0,
         filter  = NULL,
         col_t   = "time (UTC)",
@@ -51,9 +36,25 @@ tryCatch(
 ```{r}
 tryCatch(
     plot_timeseries(
+        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csvp?time%2Cmean_growth_rate",
+        title   = "Female sea lion pup growth rate",
+        y_label = "Mean growth rate (kg/day)",
+        skip    = 0,
+        filter  = NULL,
+        col_t   = "time (UTC)",
+        col_y   = "mean_growth_rate (kg/day)",
+        group_by= NULL
+    ),
+    error = function(e) e
+)
+```
+
+```{r}
+tryCatch(
+    plot_timeseries(
         csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csvp?time%2Clive_pup_count",
         title   = "Sea lion pup count San Miguel Isl.",
-        y_label = "Average live pup count",
+        y_label = "Average live pup count (number of species)",
         skip    = 0,
         filter  = NULL,
         col_t   = "time (UTC)",

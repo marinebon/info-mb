@@ -15,16 +15,16 @@ library(infographiq)
 ```
 
 <base target="_parent">
-Using seawater collected in the MBNMS, environmental DNA (eDNA) metabarcoding is used to evaluate biodiversity.  eDNA reads can be used as a qualitative and quantitative proxy for marine assemblages in a variety of oceanic habitats. Metabarcoding is a method of DNA barcoding that uses universal PCR (polymerase chain reaction) primers, 12S, 16S, 18S, and COI to identify DNA from a mixture of organisms.
+Using seawater collected in the MBNMS, environmental DNA (eDNA) metabarcoding is used to evaluate biodiversity.  eDNA sequence reads can be used as a qualitative and quantitative proxy for marine assemblages in a variety of oceanic habitats. Metabarcoding is a method of DNA barcoding that uses sections of DNA sequences as targets to identify DNA from a mixture of organisms.
 <p></p>
-The metabarcode primer 12S is used in the identification of invertebrates, such as fish, whales, seabirds and otters.
+The metabarcode primer 12S is used in the identification of vertebrates, such as fish, whales, seabirds and otters.
 
 ```{r}
 tryCatch(
     plot_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/eDNA/eDNA_richness_12S.csv",
         title   = "Vertebrate 12S Observed Richness",
-        y_label = "Observed Richness",
+        y_label = "Observed Richness (number of reads)",
         skip    = 0,
         filter  = "d_year > 2006",
         col_t   = "d_year",
@@ -41,7 +41,7 @@ tryCatch(
     plot_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/eDNA/eDNA_richness_18S.csv",
         title   = "Phytoplankton 18S Observed Richness",
-        y_label = "Observed Richness",
+        y_label = "Observed Richness (number of reads)",
         skip    = 0,
         filter  = "b_year > 2006",
         col_t   = "b_year",
@@ -58,7 +58,7 @@ tryCatch(
     plot_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/eDNA/eDNA_richness_COI.csv",
         title   = "Vertebrate and Invertebrate COI Observed Richness",
-        y_label = "Observed Richness",
+        y_label = "Observed Richness (number of reads)",
         skip    = 0,
         filter  = "c_year > 2006",
         col_t   = "c_year",

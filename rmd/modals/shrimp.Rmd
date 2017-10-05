@@ -25,7 +25,7 @@ tryCatch(
     plot_timeseries(
         csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_AC.csvp?time%2Cshrimp_coastwide&time%3E=1980-01-01&time%3C=2014-01-01",
         title   = "Shrimp Landings (coastwide)",
-        y_label = "1000s metric tons",
+        y_label = "(1000s metric tons)",
         skip    = 0,
         filter  = NULL,
         col_t   = "time (UTC)",

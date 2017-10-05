@@ -15,14 +15,15 @@ library(infographiq)
 ```
 
 <base target="_parent">
-Microscopic organisms with a massive impact, phytoplankton provide nearly half of the earth's atmospheric oxygen and consume carbon dioxide on a scale equivalent to forests. At the foundation of aquatic food webs, they are critical to the health of the ocean. Toxic phytoplankton have an impact on public health and commercial fisheries.
+Phytoplankton - Microscopic organisms with a massive impact, phytoplankton provide nearly half of the earth’s atmospheric oxygen and consume carbon dioxide on a scale equivalent to forests. At the foundation of aquatic food webs, they are critical to the health of the ocean. Toxic phytoplankton have an impact on public health and commercial fisheries.
+<p></p>Highly anomalous ocean conditions fueled a widespread bloom of phytoplankton, including toxin-producing pennate diatoms. These toxins moved through the foodweb with various impacts, including stranded marine mammals and the longest closure of the west coast Dungeness crab fishery.
 
 ```{r}
 tryCatch(
     plot_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/SDG14_MB_Monique.csv",
         title   = "Phytoplankton Biomass",
-        y_label = "mg C m-3",
+        y_label = "(mg C/m3)",
         skip    = 0,
         filter  = "year > 1989",
         col_t   = "year",
@@ -39,9 +40,9 @@ tryCatch(
     plot_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/efm_diatoms_mb_by_year.csv",
         title   = "Pennate Diatom Average Per Year",
-        y_label = "mg C m-3",
+        y_label = "(mg C/m3)",
         skip    = 0,
-        filter  = NULL,
+        filter  = "yr<2017",
         col_t   = "yr",
         col_y   = "pennate",
         group_by= NULL
@@ -57,9 +58,9 @@ tryCatch(
     plot_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/efm_diatoms_mb_by_year.csv",
         title   = "Centric Diatom Average Per Year",
-        y_label = "mg C m-3",
+        y_label = "(mg C/m3)",
         skip    = 0,
-        filter  = NULL,
+        filter  = "yr<2017",
         col_t   = "yr",
         col_y   = "centric",
         group_by= NULL
@@ -74,9 +75,9 @@ tryCatch(
     plot_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/efm_dinos_mb_by_year.csv",
         title   = "Autotrophic Dinoflagellates Average Per Year",
-        y_label = "mg C m-3",
+        y_label = "(mg C/m3)",
         skip    = 0,
-        filter  = NULL,
+        filter  = "yr<2017",
         col_t   = "yr",
         col_y   = "adinos",
         group_by= NULL

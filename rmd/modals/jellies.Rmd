@@ -21,7 +21,7 @@ tryCatch(
     plot_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/forage_inverts/FED_Gelatinous_catch.csv",
         title   = "Gelatinous Catch",
-        y_label = "Catch",
+        y_label = "Catch (number of species)",
         skip    = 0,
         filter  = NULL,
         col_t   = "yr",
@@ -39,7 +39,7 @@ tryCatch(
     plot_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/forage_inverts/FED_Jellies_catch..csv",
         title   = "Jellies Catch",
-        y_label = "Catch",
+        y_label = "Catch (number of species)",
         skip    = 0,
         filter  = NULL,
         col_t   = "yr",
