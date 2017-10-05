@@ -1,0 +1,1 @@
+Whale - Human Interactions: Unusual distribution of key forage also contributed to elevated interaction of whales with humans and fishing gear. Managers increased public outreach and education related to HABs, unusual observations on area beaches, fishing gear risk to whales, and marine mammal harassment rules.
