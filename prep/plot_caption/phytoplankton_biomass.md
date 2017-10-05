@@ -1,0 +1,1 @@
+Highly anomalous ocean conditions fueled a widespread bloom of phytoplankton, including toxin-producing pennate diatoms. These toxins moved through the foodweb with various impacts, including stranded marine mammals and the longest closure of the west coast Dungeness crab fishery.
