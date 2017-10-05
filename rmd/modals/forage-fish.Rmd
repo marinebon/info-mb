@@ -15,7 +15,7 @@ library(infographiq)
 ```
 
 <base target="_parent">
-Annual abundance of key forage fish in early summer in the central California area. Forage species form dense school or aggregations, and when present in high abundance are important food for large predators such as sharks, sea lions, whales, and seabirds. When in low abundance the local abundance and health of predators may be reduced.
+Forage species form dense school or aggregations, and when present in high abundance are important food for large predators such as sharks, sea lions, whales, and seabirds. When in low abundance the local abundance and health of predators may be reduced.
 
 ```{r}
 tryCatch(
@@ -32,7 +32,13 @@ tryCatch(
     error = function(e) e
 )
 ```
-The Fisheries Ecology Division (FED, https://swfsc.noaa.gov/GroundfishAnalysis/) of the Southwest Fisheries Science Center (SWFSC)  midwater trawl survey off central California. Fisheries Ecology Division/SWFSC/NOAA
+The Fisheries Ecology Division (FED, https://swfsc.noaa.gov/GroundfishAnalysis/) of the Southwest Fisheries Science Center (SWFSC)  midwater trawl survey off central California. The data may be used and redistributed for free but is not intended
+for legal use, since it may contain inaccuracies. Neither the data
+Contributor, ERD, NOAA, nor the United States Government, nor any
+of their employees or contractors, makes any warranty, express or
+implied, including warranties of merchantability and fitness for a
+particular purpose, or assumes any legal liability for the accuracy,
+completeness, or usefulness, of this information. Fisheries Ecology Division/SWFSC/NOAA
 
 ```{r}
 tryCatch(
@@ -49,7 +55,7 @@ tryCatch(
     error = function(e) e
 )
 ```
-Though present in the area, some key forage species - anchovy and krill - had low abundance or unusual regional abundance patterns leading to impacts to their predators.
+Though present in the area, some key forage species, such as anchovy, had low abundance patterns leading to impacts to their predators.
 
 ```{r}
 tryCatch(

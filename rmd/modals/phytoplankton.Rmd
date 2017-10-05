@@ -15,7 +15,7 @@ library(infographiq)
 ```
 
 <base target="_parent">
-Phytoplankton - Microscopic organisms with a massive impact, phytoplankton provide nearly half of the earth’s atmospheric oxygen and consume carbon dioxide on a scale equivalent to forests. At the foundation of aquatic food webs, they are critical to the health of the ocean. Toxic phytoplankton have an impact on public health and commercial fisheries.
+Microscopic organisms with a massive impact, phytoplankton provide nearly half of the earth’s atmospheric oxygen and consume carbon dioxide on a scale equivalent to forests. At the foundation of aquatic food webs, they are critical to the health of the ocean. Toxic phytoplankton have an impact on public health and commercial fisheries.
 <p></p>Highly anomalous ocean conditions fueled a widespread bloom of phytoplankton, including toxin-producing pennate diatoms. These toxins moved through the foodweb with various impacts, including stranded marine mammals and the longest closure of the west coast Dungeness crab fishery.
 
 ```{r}
@@ -33,7 +33,7 @@ tryCatch(
     error = function(e) e
 )
 ```
- A warm water event known as the "Blob", caused a wide-spread bloom of domoic acid-producing pennate diatoms and led to the closure of the California Dungeness crab season in the Fall of 2015.
+ A warm water event known as the "Blob", caused a wide-spread bloom of domoic acid-producing pennate diatoms.
 
 ```{r}
 tryCatch(
@@ -50,8 +50,7 @@ tryCatch(
     error = function(e) e
 )
 ```
-Centric diatoms are often thought of as signature or "keystone" phytoplankton species within upwelling systems. Centrics were abundant from 1998-2002, but in spring 2003 became less so. Several months following the centric decrease, dinoflagellates bloomed instead and their numbers remain high. Overall phytoplankton biomass remained high, but the dominant taxa changed, and must have affected fish and other higher-trophic level organisms in as yet unexplored ways.
-
+Centric diatoms are often thought of as signature or “keystone” phytoplankton species within upwelling systems. Centric diatoms dominate under high nutrients and external energy input. As upwelling weakens and nutrients decrease, pennate diatoms become important. Dinoflagellates are more abundant in stratified waters where turbulence is weak. Under unusual conditions of high nutrient availability and strong stratification, toxic blooms, red tides, can develop.
 
 ```{r}
 tryCatch(
@@ -85,4 +84,4 @@ tryCatch(
     error = function(e) e
 )
 ```
-<p>Monterey Bay Aquarium Research Institute (MBARI) Biological Oceanography Group, Francisco Chavez. Epifluorescent microscopy counts; units have been converted to mg Carbon/m3. http://www.mbari.org
+<p>The phytoplankton time series is from Monterey Bay Station M1, 36.75N, -122.02W. Phytoplankton counts using an epifluorescent microscope, a compound microscope equipped with a high-intensity light source which emits light in a broad spectrum from visible through ultraviolet. Units have been converted to mg Carbon/m3. MBARI provides data "as is", with no warranty, express or implied, of the quality or consistency. Data are provided without support and without obligation on the part of the Monterey Bay Aquarium Research Institute to assist in its use, correction, modification, or enhancement. Monterey Bay Aquarium Research Institute (MBARI) Biological Oceanography Group, Francisco Chavez.  http://www.mbari.org
