@@ -1,1 +1,1 @@
-<p>Monterey Bay Aquarium Research Institute (MBARI) Biological Oceanography Group, Francisco Chavez. Epifluorescent microscopy counts; units have been converted to mg Carbon/m3. http://www.mbari.org
+<p>Monterey Bay Aquarium Research Institute (MBARI) Biological Oceanography Group, Francisco Chavez. The phytoplankton time series is from Monterey Bay Station M1, 36.75N, -122.02W. Epifluorescent microscopy counts, units have been converted to mg Carbon/m3. http://www.mbari.org
