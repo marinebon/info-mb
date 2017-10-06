@@ -1,3 +1,3 @@
 Using seawater collected in the Monterey Bay National Marine Sanctuary (MBNMS), DNA associated with the environment is used to evaluate biodiversity. Environmental DNA (eDNA) is DNA suspended in seawater originating from tissue, cells, or extracellular DNA and can be sequenced to get a qualitative proxy for marine assemblages. Metabarcoding is a method of DNA barcoding that uses sections of DNA sequences as targets to identify DNA from a mixture of organisms.
 <p></p>
-The most number of organisms observed with eDNA were in 2015 for all (loci) "metabarcodes". This corresponds with other independent biodiversity assessments and with the long El Niño event. 
+The most number of organisms observed with eDNA were in 2015 for all (loci) "metabarcodes". This corresponds with other independent biodiversity assessments and with the long El Ni&ntilde;o event. 
