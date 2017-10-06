@@ -16,7 +16,7 @@ library(infographiq)
 
 <base target="_parent">
 Sea surface temperature data from satellite observations over the Monterey Bay National Marine Sanctuary (MBNMS). Data are processed by the Group for High Resolution Sea Surface Temperature (GHRSST) on a 0.25 degree (~ 27 km) grid.
-<p>These graphs illustrate the 1982-1983 and 1997-1998 El Niño events, and the 2015 event called "the Blob", a large mass of warm water in the Pacific Ocean off the coast of North America. First detected in late 2013, it continued to spread throughout 2014 and 2015. Local sea surface temperature in the MBNMS rose to a high of 17.93 degrees C. Based on long-term monitoring, it had very extensive impacts in MBNMS, and led to record high changes in many components: predator diversity, plankton blooms, and management actions were needed.</p>
+<p>These graphs illustrate the 1982-1983 and 1997-1998 El Ni&ntilde;o events, and the 2015 event called "the Blob", a large mass of warm water in the Pacific Ocean off the coast of North America. First detected in late 2013, it continued to spread throughout 2014 and 2015. Local sea surface temperature in the MBNMS rose to a high of 17.93 degrees C. Based on long-term monitoring, it had very extensive impacts in MBNMS, and led to record high changes in many components: predator diversity, plankton blooms, and management actions were needed.</p>
 
 ```{r}
 tryCatch(
