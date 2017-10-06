@@ -37,38 +37,6 @@ tryCatch(
 tryCatch(
     plot_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/fish/Fish_diversity_richness.csv",
-        title   = "Diversity of Juvenile Rockfish and Groundfish (53 taxa)",
-        y_label = "Diversity (Shannon-Weaver)",
-        skip    = 0,
-        filter  = NULL,
-        col_t   = "year",
-        col_y   = "YOYDiv",
-        group_by= NULL
-    ),
-    error = function(e) e
-)
-```
-
-```{r}
-tryCatch(
-    plot_timeseries(
-        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/fish/Fish_diversity_richness.csv",
-        title   = "Diversity of Other Forage (49 Taxa)",
-        y_label = "Diversity (Shannon-Weaver)",
-        skip    = 0,
-        filter  = NULL,
-        col_t   = "year",
-        col_y   = "FORDiv",
-        group_by= NULL
-    ),
-    error = function(e) e
-)
-```
-
-```{r}
-tryCatch(
-    plot_timeseries(
-        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/fish/Fish_diversity_richness.csv",
         title   = "Richness of all Forage (111 taxa)",
         y_label = "Average Species Richness (number of species)",
         skip    = 0,
