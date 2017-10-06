@@ -1,0 +1,1 @@
+The Group for High Resolution Sea Surface Temperature (GHRSST) is an open international science group that promotes the application of satellites for monitoring sea surface temperature (SST). The GHRSST Project Office is co-funded by the European Space Agency, the National Centre for Earth Observation, and the universities of Leicester and Reading. https://www.ghrsst.org
