@@ -19,13 +19,13 @@ library(infographiq)
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "NA",
-        title   = "NA",
-        y_label = "NA",
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/MBNMS_GHRSST.csv",
+        title   = "Mean SST",
+        y_label = "Deg C",
         skip    = 0,
         filter  = NULL,
-        col_t   = NULL,
-        col_y   = NULL,
+        col_t   = "Date",
+        col_y   = "Mean SST",
         group_by= NULL
     ),
     error = function(e) e
@@ -35,14 +35,14 @@ tryCatch(
 ```{r}
 tryCatch(
     plot_timeseries(
-        csv_tv  = "",
-        title   = "",
-        y_label = "",
-        skip    = ,
-        filter  = ,
-        col_t   = ,
-        col_y   = ,
-        group_by= 
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/MBNMS_GHRSST.csv",
+        title   = "Anomaly",
+        y_label = "Deg C",
+        skip    = 0,
+        filter  = NULL,
+        col_t   = "Date",
+        col_y   = "Mean SST",
+        group_by= NULL
     ),
     error = function(e) e
 )
