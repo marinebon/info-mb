@@ -1,1 +1,1 @@
-The metabarcode 12S is used in the identification of vertebrates, such as fish, whales, seabirds, sea lions and otters.
+The metabarcode 12S is used in the identification of vertebrates, such as fish, birds, whales, and other marine mammals.
