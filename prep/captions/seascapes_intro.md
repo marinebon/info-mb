@@ -1,0 +1,1 @@
+Seascapes are created with satellite data to find areas of the ocean surface with similar characteristics. Usually cool, productive water (dark red) is prevalent but in 2014-15 conditions were more variable with reduced area of cool productive waters (dark red), and abundance of nutrient deplete nearshore (orange) and influx of offshore (cyan) waters. 
