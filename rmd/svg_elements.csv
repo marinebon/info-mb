@@ -1,5 +1,5 @@
 svg,svg_id,label,status_text,status_color,modal_before,modal_after
-pelagic.svg,SST,Sea Surface Temperature,,#2b2b2b,,prep/captions/SST_attribute.md
+pelagic.svg,SST,Sea Surface Temperature,,#2b2b2b,prep/captions/SST_intro.md,prep/captions/SST_attribute.md
 pelagic.svg,seascape,Seascapes,,#2b2b2b,prep/captions/seascapes_intro.md,
 pelagic.svg,phytoplankton,Phytoplankton,,#1e3b1a,prep/captions/phytoplankton.md,prep/captions/phytoplankton_bottom.md
 pelagic.svg,forage-fish,Forage Fish,,#2b2b2b,prep/captions/forage_fish_intro.md,prep/plot_caption/forage_biomass.md
