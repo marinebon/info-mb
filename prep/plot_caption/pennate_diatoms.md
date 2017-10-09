@@ -1,1 +1,1 @@
-In 2015 there was a wide-spread bloom of domoic acid-producing pennate diatoms.
+<p></p>In 2015 pennate diatom levels were elevated and there was a wide-spread bloom of domoic acid-producing pennate diatoms, an event also know as harmful algal bloom or HAB. https://sanctuarysimon.org/monterey-bay-nms/harmful-algal-blooms/
