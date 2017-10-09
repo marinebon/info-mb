@@ -1,1 +1,1 @@
-Forage species form dense school or aggregations, and when present in high abundance are important food for large predators such as sharks, sea lions, whales, and seabirds. When in low abundance the local abundance and health of predators may be reduced.
+Forage species form dense schools or aggregations, and when present in high abundance are important food for large predators such as sharks, sea lions, whales, and seabirds. When in low abundance the local health and abundance of predators may be reduced.
