@@ -1,1 +1,1 @@
-Centric diatoms are often thought of as signature or "keystone" phytoplankton species within upwelling systems.
+Centric diatoms are often thought of as signature or "keystone" phytoplankton species within upwelling systems. They are important for supplying an estimated 45% of total primary production of organic material to the ocean's food web.
