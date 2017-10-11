@@ -16,45 +16,6 @@ library(infographiq)
 
 <base target="_parent">
 Forage species form dense schools or aggregations, and when present in high abundance are important food for large predators such as sharks, sea lions, whales, and seabirds. When in low abundance the local health and abundance of predators may be reduced.
-
-```{r}
-tryCatch(
-    plot_timeseries(
-        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/fish/FED_Rockfish_Forage_Catch_ALL_year_sums.csv",
-        title   = "Forage & Rockfish (YOY adults and unknown) Abundance",
-        y_label = "Catch (number of species)",
-        skip    = 0,
-        filter  = NULL,
-        col_t   = "year",
-        col_y   = "catch",
-        group_by= NULL
-    ),
-    error = function(e) e
-)
-```
-The Fisheries Ecology Division (FED, https://swfsc.noaa.gov/GroundfishAnalysis/) of the Southwest Fisheries Science Center (SWFSC)  midwater trawl survey off central California. The data may be used and redistributed for free but is not intended
-for legal use, since it may contain inaccuracies. Neither the data
-Contributor, ERD, NOAA, nor the United States Government, nor any
-of their employees or contractors, makes any warranty, express or
-implied, including warranties of merchantability and fitness for a
-particular purpose, or assumes any legal liability for the accuracy,
-completeness, or usefulness, of this information. Fisheries Ecology Division/SWFSC/NOAA
-
-```{r}
-tryCatch(
-    plot_timeseries(
-        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/fish/FED_Forage_Catch_A_UKN_year_sums.csv",
-        title   = "Forage Fish (adults) Abundance",
-        y_label = "Catch (number of species)",
-        skip    = 0,
-        filter  = NULL,
-        col_t   = "year",
-        col_y   = "catch",
-        group_by= NULL
-    ),
-    error = function(e) e
-)
-```
 Though present in the area, some key forage species, such as anchovy, had low abundance patterns leading to impacts to their predators.
 
 ```{r}

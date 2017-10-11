@@ -21,7 +21,7 @@ library(infographiq)
 tryCatch(
     plot_timeseries(
         csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_EI_FBC.csvp?time%2Cspecies_group%2Cmean_cpue%2CSeup%2CSelo&distinct()",
-        title   = "Krill  (<i>Euphausid spp.</i>) Abundance off Central California",
+        title   = "Krill  (<i>Euphausiid spp.</i>) Abundance off Central California",
         y_label = "Average Abundance catch per unit effort (ln(catch+1))",
         skip    = 0,
         filter  = "species_group == \"Krill\"",
