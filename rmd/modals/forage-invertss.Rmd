@@ -37,7 +37,7 @@ tryCatch(
 tryCatch(
     plot_timeseries(
         csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_EI_FBC.csvp?time%2Cspecies_group%2Cmean_cpue%2CSeup%2CSelo&distinct()",
-        title   = "Market Squid  (<i>Loligo opalescens</i>) Abundance off Central California",
+        title   = "Market Squid  (<i>Doryteuthis opalescent</i>) Abundance off Central California",
         y_label = "Average Abundance catch per unit effort (ln(catch+1))",
         skip    = 0,
         filter  = "species_group == \"Market squid\"",
