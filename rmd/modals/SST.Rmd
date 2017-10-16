@@ -44,7 +44,7 @@ tryCatch(
         skip    = 0,
         filter  = NULL,
         col_t   = "Date",
-        col_y   = "Mean SST",
+        col_y   = "Anomaly",
         group_by= NULL
     ),
     error = function(e) e
