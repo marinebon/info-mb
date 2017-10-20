@@ -16,17 +16,19 @@ library(infographiq)
 
 <base target="_parent">
 
-```{r}
+
+```{r out.width='100%'}
 tryCatch(
-    plot_timeseries(
+    plot_dygraph_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/forage_inverts/FED_Gelatinous_catch.csv",
         title   = "Gelatinous Catch",
         y_label = "Catch (number of species)",
-        skip    = 0,
-        filter  = NULL,
         col_t   = "yr",
-        col_y   = "catch",
-        group_by= NULL
+        col_y   = "catch"
+        #skip_lines
+        #group_by  
+        #std_err   
+        #filter
     ),
     error = function(e) e
 )
@@ -34,17 +36,19 @@ tryCatch(
 Gelatinous species: Pyrosoma, Salp, Thetys Salp, Heteropd<br>
 Jelly species: Fried Egg Jelly, Sea Nettle, Purple-striped Jelly, Moon Jelly.
 
-```{r}
+
+```{r out.width='100%'}
 tryCatch(
-    plot_timeseries(
+    plot_dygraph_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/forage_inverts/FED_Jellies_catch..csv",
         title   = "Jellies Catch",
         y_label = "Catch (number of species)",
-        skip    = 0,
-        filter  = NULL,
         col_t   = "yr",
-        col_y   = "catch",
-        group_by= NULL
+        col_y   = "catch"
+        #skip_lines
+        #group_by  
+        #std_err   
+        #filter
     ),
     error = function(e) e
 )

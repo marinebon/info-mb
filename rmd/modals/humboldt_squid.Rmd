@@ -16,17 +16,19 @@ library(infographiq)
 
 <base target="_parent">
 
-```{r}
+
+```{r out.width='100%'}
 tryCatch(
-    plot_timeseries(
+    plot_dygraph_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/dosidicus/MBARI_ROV_dosid.csv",
         title   = "Humboldt Squid (<i>Dosidicus gigas</i>) Video Transect Sightings in Monterey Bay",
         y_label = "Squid Sightings (number of species)",
-        skip    = 0,
-        filter  = NULL,
         col_t   = "year",
-        col_y   = "count",
-        group_by= NULL
+        col_y   = "count"
+        #skip_lines
+        #group_by  
+        #std_err   
+        #filter
     ),
     error = function(e) e
 )

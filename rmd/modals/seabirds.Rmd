@@ -15,35 +15,3 @@ library(infographiq)
 ```
 
 <base target="_parent">
-
-```{r}
-tryCatch(
-    plot_timeseries(
-        csv_tv  = "NA",
-        title   = "NA",
-        y_label = "NA",
-        skip    = 0,
-        filter  = NULL,
-        col_t   = NULL,
-        col_y   = NULL,
-        group_by= NULL
-    ),
-    error = function(e) e
-)
-```
-
-```{r}
-tryCatch(
-    plot_timeseries(
-        csv_tv  = "",
-        title   = "",
-        y_label = "",
-        skip    = ,
-        filter  = ,
-        col_t   = ,
-        col_y   = ,
-        group_by= 
-    ),
-    error = function(e) e
-)
-```
