@@ -18,68 +18,76 @@ library(infographiq)
 Microscopic organisms with a massive impact, phytoplankton provide nearly half of the earth's atmospheric oxygen and consume carbon dioxide on a scale equivalent to forests. At the foundation of aquatic food webs, they are critical to the health of the ocean. Toxic phytoplankton have an impact on public health and commercial fisheries.
 <p></p>Highly anomalous ocean conditions fueled a widespread bloom of phytoplankton, including toxin-producing pennate diatoms. These toxins moved through the foodweb with various impacts, including stranded marine mammals and the longest closure of the west coast Dungeness crab fishery.
 
-```{r}
+
+```{r out.width='100%'}
 tryCatch(
-    plot_timeseries(
+    plot_dygraph_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/SDG14_MB_Monique.csv",
         title   = "Phytoplankton Biomass",
         y_label = "(mg C/m3)",
-        skip    = 0,
-        filter  = "year > 1989",
         col_t   = "year",
-        col_y   = "biomass",
-        group_by= NULL
+        col_y   = "biomass"
+        , skip    ="0"
+        #group_by  
+        #std_err   
+        , filter  ="year > 1989"
     ),
     error = function(e) e
 )
 ```
 <p></p>In 2015 pennate diatom levels were elevated and there was a wide-spread bloom of domoic acid-producing pennate diatoms, an event also know as harmful algal bloom or HAB. https://sanctuarysimon.org/monterey-bay-nms/harmful-algal-blooms/
 
-```{r}
+
+```{r out.width='100%'}
 tryCatch(
-    plot_timeseries(
+    plot_dygraph_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/efm_diatoms_mb_by_year.csv",
         title   = "Pennate Diatom Average Per Year",
         y_label = "(mg C/m3)",
-        skip    = 0,
-        filter  = "yr<2017",
         col_t   = "yr",
-        col_y   = "pennate",
-        group_by= NULL
+        col_y   = "pennate"
+        , skip    ="0"
+        #group_by  
+        #std_err   
+        , filter  ="yr<2017"
     ),
     error = function(e) e
 )
 ```
 Centric diatoms are often thought of as signature or "keystone" phytoplankton species within upwelling systems. They are important for supplying an estimated 45% of total primary production of organic material to the ocean's food web.
 
-```{r}
+
+```{r out.width='100%'}
 tryCatch(
-    plot_timeseries(
+    plot_dygraph_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/efm_diatoms_mb_by_year.csv",
         title   = "Centric Diatom Average Per Year",
         y_label = "(mg C/m3)",
-        skip    = 0,
-        filter  = "yr<2017",
         col_t   = "yr",
-        col_y   = "centric",
-        group_by= NULL
+        col_y   = "centric"
+        , skip    ="0"
+        #group_by  
+        #std_err   
+        , filter  ="yr<2017"
     ),
     error = function(e) e
 )
 ```
 In 2004, dinoflagellates replaced diatoms as the dominant phytoplankton taxon in Monterey Bay. This shift in "keystone" phytoplankon is associated with an increase in near surface stratification and a decrease in upwelling-favorable winds. Some species of dinoflagellates are known to produce toxic phytoplankton blooms known as "red tide".
 
-```{r}
+
+```{r out.width='100%'}
 tryCatch(
-    plot_timeseries(
+    plot_dygraph_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/phytoplankton/efm_dinos_mb_by_year.csv",
         title   = "Autotrophic Dinoflagellates Average Per Year",
         y_label = "(mg C/m3)",
-        skip    = 0,
-        filter  = "yr<2017",
         col_t   = "yr",
-        col_y   = "adinos",
-        group_by= NULL
+        col_y   = "adinos"
+        , skip    ="0"
+        #group_by  
+        #std_err   
+        , filter  ="yr<2017"
     ),
     error = function(e) e
 )

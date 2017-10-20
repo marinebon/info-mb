@@ -21,17 +21,19 @@ metric tons) on the U.S. West Coast. Crab species include Dungeness
 (Metacarcinus magister), tanner (Chionoecetes spp.), rock (Cancer spp.) and
 unspecified crabs.
 
-```{r}
+
+```{r out.width='100%'}
 tryCatch(
-    plot_timeseries(
+    plot_dygraph_timeseries(
         csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_AC.csvp?time%2Ccrab_coastwide&time%3E=1980-01-01&time%3C=2014-01-01",
         title   = "Crab Landings (coastwide)",
         y_label = "(1000s metric tons)",
-        skip    = 0,
-        filter  = NULL,
         col_t   = "time (UTC)",
-        col_y   = "crab_coastwide (1000s metric tons)",
-        group_by= NULL
+        col_y   = "crab_coastwide (1000s metric tons)"
+        , skip    ="0"
+        #group_by  
+        #std_err   
+        #filter
     ),
     error = function(e) e
 )

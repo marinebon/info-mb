@@ -19,33 +19,37 @@ Sea surface temperature data from satellite observations over the Monterey Bay N
 <p></p>
 <p>These graphs illustrate the 1982-1983 and 1997-1998 El Ni&ntilde;o events, and the 2015 event called "the Blob", a large mass of warm water in the Pacific Ocean off the coast of North America. First detected in late 2013, it continued to spread throughout 2014 and 2015. Local sea surface temperature in the MBNMS rose to a high of 17.93 degrees C. Based on long-term monitoring, it had very extensive impacts in MBNMS, and led to record high changes in many components: predator diversity, plankton blooms, and management actions were needed.</p>
 
-```{r}
+
+```{r out.width='100%'}
 tryCatch(
-    plot_timeseries(
+    plot_dygraph_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/MBNMS_GHRSST.csv",
         title   = "Mean Sea Surface Temperature from Satellite",
         y_label = "Deg C",
-        skip    = 0,
-        filter  = NULL,
         col_t   = "Date",
-        col_y   = "Mean SST",
-        group_by= NULL
+        col_y   = "Mean SST"
+        #skip_lines
+        #group_by  
+        #std_err   
+        #filter
     ),
     error = function(e) e
 )
 ```
 
-```{r}
+
+```{r out.width='100%'}
 tryCatch(
-    plot_timeseries(
+    plot_dygraph_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/MBNMS_GHRSST.csv",
         title   = "Sea Surface Temperature Anomaly from Satellite",
         y_label = "Deg C",
-        skip    = 0,
-        filter  = NULL,
         col_t   = "Date",
-        col_y   = "Anomaly",
-        group_by= NULL
+        col_y   = "Anomaly"
+        #skip_lines
+        #group_by  
+        #std_err   
+        #filter
     ),
     error = function(e) e
 )

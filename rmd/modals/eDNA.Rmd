@@ -20,51 +20,57 @@ Using seawater collected in the Monterey Bay National Marine Sanctuary (MBNMS), 
 The most number of organisms observed with eDNA were in 2015 for all (loci) "metabarcodes". This corresponds with other independent biodiversity assessments and with the long El Ni&ntilde;o event. 
 The metabarcode 12S is used in the identification of vertebrates, such as fish, birds, whales, and other marine mammals.
 
-```{r}
+
+```{r out.width='100%'}
 tryCatch(
-    plot_timeseries(
+    plot_dygraph_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/eDNA/eDNA_richness_12S.csv",
         title   = "Vertebrate 12S Observed Richness",
         y_label = "Observed Richness (number of unique genetic sequences)",
-        skip    = 0,
-        filter  = "d_year > 2006",
         col_t   = "d_year",
-        col_y   = "x",
-        group_by= NULL
+        col_y   = "x"
+        #skip_lines
+        #group_by  
+        #std_err   
+        , filter  ="d_year > 2006"
     ),
     error = function(e) e
 )
 ```
 The metabarcode 18S is used primarily to identify phytoplankton, such as centric diatoms or toxic species of pseudo nitzschia.
 
-```{r}
+
+```{r out.width='100%'}
 tryCatch(
-    plot_timeseries(
+    plot_dygraph_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/eDNA/eDNA_richness_18S.csv",
         title   = "Phytoplankton 18S Observed Richness",
         y_label = "Observed Richness (number of unique genetic sequences)",
-        skip    = 0,
-        filter  = "b_year > 2006",
         col_t   = "b_year",
-        col_y   = "x",
-        group_by= NULL
+        col_y   = "x"
+        #skip_lines
+        #group_by  
+        #std_err   
+        , filter  ="b_year > 2006"
     ),
     error = function(e) e
 )
 ```
 The metabarcode COI identifies both phytoplankton and zooplankton, such as diatoms, krill, and copepods.
 
-```{r}
+
+```{r out.width='100%'}
 tryCatch(
-    plot_timeseries(
+    plot_dygraph_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/eDNA/eDNA_richness_COI.csv",
         title   = "Vertebrate and Invertebrate COI Observed Richness",
         y_label = "Observed Richness (number of unique genetic sequences)",
-        skip    = 0,
-        filter  = "c_year > 2006",
         col_t   = "c_year",
-        col_y   = "x",
-        group_by= NULL
+        col_y   = "x"
+        #skip_lines
+        #group_by  
+        #std_err   
+        , filter  ="c_year > 2006"
     ),
     error = function(e) e
 )
