@@ -27,11 +27,7 @@ tryCatch(
         y_label = "Average Abundance catch per unit effort (ln(catch+1))",
         col_t   = "time (UTC)",
         col_y   = "mean_cpue (ln(catch+1))"
-<<<<<<< HEAD
         #skip_lines
-=======
-        , skip=0
->>>>>>> b8c928582c3cdd2b14b8f121c23e440fabcf9005
         #group_by  
         #std_err   
         , filter="species_group == \"Anchovy\""
@@ -49,11 +45,7 @@ tryCatch(
         y_label = "Average Abundance catch per unit effort (ln(catch+1))",
         col_t   = "time (UTC)",
         col_y   = "mean_cpue (ln(catch+1))"
-<<<<<<< HEAD
         #skip_lines
-=======
-        , skip=0
->>>>>>> b8c928582c3cdd2b14b8f121c23e440fabcf9005
         #group_by  
         #std_err   
         , filter="species_group == \"Hake\""
@@ -71,11 +63,7 @@ tryCatch(
         y_label = "Average Abundance catch per unit effort (ln(catch+1))",
         col_t   = "time (UTC)",
         col_y   = "mean_cpue (ln(catch+1))"
-<<<<<<< HEAD
         #skip_lines
-=======
-        , skip=0
->>>>>>> b8c928582c3cdd2b14b8f121c23e440fabcf9005
         #group_by  
         #std_err   
         , filter="species_group == \"Hake\""
@@ -93,11 +81,7 @@ tryCatch(
         y_label = "Average Abundance catch per unit effort (ln(catch+1))",
         col_t   = "time (UTC)",
         col_y   = "mean_cpue (ln(catch+1))"
-<<<<<<< HEAD
         #skip_lines
-=======
-        , skip=0
->>>>>>> b8c928582c3cdd2b14b8f121c23e440fabcf9005
         #group_by  
         #std_err   
         , filter="species_group == \"Sanddabs\""
@@ -115,11 +99,7 @@ tryCatch(
         y_label = "Average Abundance catch per unit effort (ln(catch+1))",
         col_t   = "time (UTC)",
         col_y   = "mean_cpue (ln(catch+1))"
-<<<<<<< HEAD
         #skip_lines
-=======
-        , skip=0
->>>>>>> b8c928582c3cdd2b14b8f121c23e440fabcf9005
         #group_by  
         #std_err   
         , filter="species_group == \"Rockfish juveniles\""
