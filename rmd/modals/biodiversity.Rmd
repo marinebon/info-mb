@@ -37,7 +37,7 @@ tryCatch(
 tryCatch(
     plot_timeseries(
         csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/fish/Fish_diversity_richness.csv",
-        title   = "Richness of all Forage (111 taxa)",
+        title   = "Richness of All Forage Taxa",
         y_label = "Average Species Richness (number of species)",
         skip    = 0,
         filter  = NULL,
