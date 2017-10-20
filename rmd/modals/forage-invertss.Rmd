@@ -26,10 +26,10 @@ tryCatch(
         y_label = "Average Abundance catch per unit effort (ln(catch+1))",
         col_t   = "time (UTC)",
         col_y   = "mean_cpue (ln(catch+1))"
-        , skip    ="0"
+        , skip=0
         #group_by  
         #std_err   
-        , filter  ="species_group == \"Krill\""
+        , filter="species_group == \"Krill\""
     ),
     error = function(e) e
 )
@@ -44,10 +44,10 @@ tryCatch(
         y_label = "Average Abundance catch per unit effort (ln(catch+1))",
         col_t   = "time (UTC)",
         col_y   = "mean_cpue (ln(catch+1))"
-        , skip    ="0"
+        , skip=0
         #group_by  
         #std_err   
-        , filter  ="species_group == \"Market squid\""
+        , filter="species_group == \"Market squid\""
     ),
     error = function(e) e
 )

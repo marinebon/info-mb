@@ -26,7 +26,7 @@ tryCatch(
         y_label = "Diversity (Shannon-Weaver)",
         col_t   = "year",
         col_y   = "ALLDiv"
-        , skip    ="0"
+        , skip=0
         #group_by  
         #std_err   
         #filter
@@ -44,7 +44,7 @@ tryCatch(
         y_label = "Average Species Richness (number of species)",
         col_t   = "year",
         col_y   = "ALLRich"
-        , skip    ="0"
+        , skip=0
         #group_by  
         #std_err   
         #filter
@@ -62,7 +62,7 @@ tryCatch(
         y_label = "Average Species Richness (number of species)",
         col_t   = "year",
         col_y   = "YOYRich"
-        , skip    ="0"
+        , skip=0
         #group_by  
         #std_err   
         #filter
@@ -80,7 +80,7 @@ tryCatch(
         y_label = "Average Species Richness (number of species)",
         col_t   = "year",
         col_y   = "FORRich"
-        , skip    ="0"
+        , skip=0
         #group_by  
         #std_err   
         #filter

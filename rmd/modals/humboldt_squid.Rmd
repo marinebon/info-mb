@@ -25,7 +25,7 @@ tryCatch(
         y_label = "Squid Sightings (number of species)",
         col_t   = "year",
         col_y   = "count"
-        , skip    ="0"
+        , skip=0
         #group_by  
         #std_err   
         #filter

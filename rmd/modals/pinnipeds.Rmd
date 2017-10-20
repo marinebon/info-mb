@@ -26,7 +26,7 @@ tryCatch(
         y_label = "Mean pup weight (kg)",
         col_t   = "time (UTC)",
         col_y   = "mean_weight (kg)"
-        , skip    ="0"
+        , skip=0
         #group_by  
         #std_err   
         #filter
@@ -44,7 +44,7 @@ tryCatch(
         y_label = "Mean growth rate (kg/day)",
         col_t   = "time (UTC)",
         col_y   = "mean_growth_rate (kg/day)"
-        , skip    ="0"
+        , skip=0
         #group_by  
         #std_err   
         #filter
@@ -62,7 +62,7 @@ tryCatch(
         y_label = "Average live pup count (number of species)",
         col_t   = "time (UTC)",
         col_y   = "live_pup_count (count)"
-        , skip    ="0"
+        , skip=0
         #group_by  
         #std_err   
         #filter

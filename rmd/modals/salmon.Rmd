@@ -25,7 +25,7 @@ tryCatch(
         y_label = "Abundance anomaly (observed mean/standard deviation)",
         col_t   = "yr",
         col_y   = "abundance"
-        , skip    ="0"
+        , skip=0
         #group_by  
         #std_err   
         #filter
@@ -44,7 +44,7 @@ tryCatch(
         y_label = "Abundance anomaly (observed mean/standard deviation)",
         col_t   = "time (UTC)",
         col_y   = "abundance"
-        , skip    ="0"
+        , skip=0
         #group_by  
         #std_err   
         #filter

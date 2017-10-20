@@ -29,7 +29,7 @@ tryCatch(
         y_label = "(1000s metric tons)",
         col_t   = "time (UTC)",
         col_y   = "shrimp_coastwide (1000s metric tons)"
-        , skip    ="0"
+        , skip=0
         #group_by  
         #std_err   
         #filter
