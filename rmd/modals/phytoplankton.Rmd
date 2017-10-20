@@ -27,10 +27,14 @@ tryCatch(
         y_label = "(mg C/m3)",
         col_t   = "year",
         col_y   = "biomass"
+<<<<<<< HEAD
         #skip_lines
+=======
+        , skip=0
+>>>>>>> b8c928582c3cdd2b14b8f121c23e440fabcf9005
         #group_by  
         #std_err   
-        , filter  ="year > 1989"
+        , filter="year > 1989"
     ),
     error = function(e) e
 )
@@ -46,10 +50,14 @@ tryCatch(
         y_label = "(mg C/m3)",
         col_t   = "yr",
         col_y   = "pennate"
+<<<<<<< HEAD
         #skip_lines
+=======
+        , skip=0
+>>>>>>> b8c928582c3cdd2b14b8f121c23e440fabcf9005
         #group_by  
         #std_err   
-        , filter  ="yr<2017"
+        , filter="yr<2017"
     ),
     error = function(e) e
 )
@@ -65,10 +73,14 @@ tryCatch(
         y_label = "(mg C/m3)",
         col_t   = "yr",
         col_y   = "centric"
+<<<<<<< HEAD
         #skip_lines
+=======
+        , skip=0
+>>>>>>> b8c928582c3cdd2b14b8f121c23e440fabcf9005
         #group_by  
         #std_err   
-        , filter  ="yr<2017"
+        , filter="yr<2017"
     ),
     error = function(e) e
 )
@@ -84,10 +96,14 @@ tryCatch(
         y_label = "(mg C/m3)",
         col_t   = "yr",
         col_y   = "adinos"
+<<<<<<< HEAD
         #skip_lines
+=======
+        , skip=0
+>>>>>>> b8c928582c3cdd2b14b8f121c23e440fabcf9005
         #group_by  
         #std_err   
-        , filter  ="yr<2017"
+        , filter="yr<2017"
     ),
     error = function(e) e
 )

@@ -32,7 +32,7 @@ tryCatch(
         #skip_lines
         #group_by  
         #std_err   
-        , filter  ="d_year > 2006"
+        , filter="d_year > 2006"
     ),
     error = function(e) e
 )
@@ -51,7 +51,7 @@ tryCatch(
         #skip_lines
         #group_by  
         #std_err   
-        , filter  ="b_year > 2006"
+        , filter="b_year > 2006"
     ),
     error = function(e) e
 )
@@ -70,7 +70,7 @@ tryCatch(
         #skip_lines
         #group_by  
         #std_err   
-        , filter  ="c_year > 2006"
+        , filter="c_year > 2006"
     ),
     error = function(e) e
 )
