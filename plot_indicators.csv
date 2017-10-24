@@ -31,3 +31,5 @@ row,Classification_level,svg_id,plot_title,plot_caption,filter,col_t,col_y,col_s
 30,Trophic group,eDNA,Vertebrate and Invertebrate COI Observed Richness,prep/plot_caption/eDNA_COI.md,c_year > 2006,c_year,x,NA,Observed Richness (number of unique genetic sequences),NA,info-mb/master/prep/data/eDNA/eDNA_richness_COI.csv,,https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/eDNA/eDNA_richness_COI.csv
 31,,SST,Mean Sea Surface Temperature from Satellite,prep/plot_caption/SST.md,NA,Date,Mean SST,NA,Deg C,NA,NA,,https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/MBNMS_GHRSST.csv
 32,,SST,Sea Surface Temperature Anomaly from Satellite,NA,NA,Date,Anomaly,NA,Deg C,NA,NA,,https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/MBNMS_GHRSST.csv
+81,,SST,Mean CHL,NA,NA,Date,Mean SST,NA,_,NA,NA,NA,https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/MBNMS_MOD_CHL.csv
+82,,SST,CHL Anomaly,NA,NA,Date,Anomaly,NA,_,NA,NA,NA,https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/MBNMS_MOD_CHL.csv

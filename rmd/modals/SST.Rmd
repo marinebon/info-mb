@@ -54,4 +54,40 @@ tryCatch(
     error = function(e) e
 )
 ```
+
+
+```{r out.width='100%'}
+tryCatch(
+    plot_dygraph_timeseries(
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/MBNMS_MOD_CHL.csv",
+        title   = "Mean CHL",
+        y_label = "_",
+        col_t   = "Date",
+        col_y   = "Mean SST"
+        #skip_lines
+        #group_by  
+        #std_err   
+        #filter
+    ),
+    error = function(e) e
+)
+```
+
+
+```{r out.width='100%'}
+tryCatch(
+    plot_dygraph_timeseries(
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/MBNMS_MOD_CHL.csv",
+        title   = "CHL Anomaly",
+        y_label = "_",
+        col_t   = "Date",
+        col_y   = "Anomaly"
+        #skip_lines
+        #group_by  
+        #std_err   
+        #filter
+    ),
+    error = function(e) e
+)
+```
 The Group for High Resolution Sea Surface Temperature (GHRSST) is an open international science group that promotes the application of satellites for monitoring sea surface temperature (SST). The GHRSST Project Office is co-funded by the European Space Agency, the National Centre for Earth Observation, and the universities of Leicester and Reading. https://www.ghrsst.org
