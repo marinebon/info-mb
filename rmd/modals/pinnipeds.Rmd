@@ -21,6 +21,24 @@ Reduced amount of key forage contributed to low reproduction and high stranding 
 ```{r out.width='100%'}
 tryCatch(
     plot_dygraph_timeseries(
+        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csvp?time%2Clive_pup_count",
+        title   = "Sea lion pup count San Miguel Isl.",
+        y_label = "Average live pup count (number of species)",
+        col_t   = "time (UTC)",
+        col_y   = "live_pup_count (count)"
+        #skip_lines
+        #group_by  
+        #std_err   
+        #filter
+    ),
+    error = function(e) e
+)
+```
+
+
+```{r out.width='100%'}
+tryCatch(
+    plot_dygraph_timeseries(
         csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csvp?time%2Cmean_weight",
         title   = "Female sea lion pup weight index",
         y_label = "Mean pup weight (kg)",
@@ -44,24 +62,6 @@ tryCatch(
         y_label = "Mean growth rate (kg/day)",
         col_t   = "time (UTC)",
         col_y   = "mean_growth_rate (kg/day)"
-        #skip_lines
-        #group_by  
-        #std_err   
-        #filter
-    ),
-    error = function(e) e
-)
-```
-
-
-```{r out.width='100%'}
-tryCatch(
-    plot_dygraph_timeseries(
-        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.csvp?time%2Clive_pup_count",
-        title   = "Sea lion pup count San Miguel Isl.",
-        y_label = "Average live pup count (number of species)",
-        col_t   = "time (UTC)",
-        col_y   = "live_pup_count (count)"
         #skip_lines
         #group_by  
         #std_err   

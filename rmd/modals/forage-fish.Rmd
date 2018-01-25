@@ -15,7 +15,7 @@ library(infographiq)
 ```
 
 <base target="_parent">
-Forage species form dense schools or aggregations, and when present in high abundance are important food for large predators such as sharks, sea lions, whales, and seabirds. When in low abundance the local health and abundance of predators may be reduced.
+Forage species form dense schools or aggregations, and when present in high abundance are important food for large predators such as sharks, sea lions, whales, and seabirds. When in low abundance the local health and abundance of predators may be reduced. Values are given for young of the year (YOY) or adult populations.
 Though present in the area, some key forage species, such as anchovy, had low abundance patterns leading to impacts to their predators.
 
 
@@ -23,14 +23,33 @@ Though present in the area, some key forage species, such as anchovy, had low ab
 tryCatch(
     plot_dygraph_timeseries(
         csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_EI_FBC.csvp?time%2Cspecies_group%2Cmean_cpue%2CSeup%2CSelo&distinct()",
-        title   = "Northern Anchovy (<i>Engraulis mordax</i>) Abundance off Central California",
+        title   = "Adult Northern Anchovy (<i>Engraulis mordax</i>) Abundance off Central California",
         y_label = "Average Abundance catch per unit effort (ln(catch+1))",
         col_t   = "time (UTC)",
         col_y   = "mean_cpue (ln(catch+1))"
         #skip_lines
         #group_by  
         #std_err   
-        , filter="species_group == \"Anchovy\""
+        , filter="species_group == \"Adult anchovy\""
+    ),
+    error = function(e) e
+)
+```
+Though present in the area, some key forage species, such as anchovy, had low abundance patterns leading to impacts to their predators.
+
+
+```{r out.width='100%'}
+tryCatch(
+    plot_dygraph_timeseries(
+        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_EI_FBC.csvp?time%2Cspecies_group%2Cmean_cpue%2CSeup%2CSelo&distinct()",
+        title   = "YOY Northern Anchovy (<i>Engraulis mordax</i>) Abundance off Central California",
+        y_label = "Average Abundance catch per unit effort (ln(catch+1))",
+        col_t   = "time (UTC)",
+        col_y   = "mean_cpue (ln(catch+1))"
+        #skip_lines
+        #group_by  
+        #std_err   
+        , filter="species_group == \"YOY anchovy\""
     ),
     error = function(e) e
 )
@@ -41,14 +60,14 @@ tryCatch(
 tryCatch(
     plot_dygraph_timeseries(
         csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_EI_FBC.csvp?time%2Cspecies_group%2Cmean_cpue%2CSeup%2CSelo&distinct()",
-        title   = "Pacific Hake  (<i>Merluccius productus</i>) Abundance off Central California",
+        title   = "Adult Pacific Sardine (<i>Sardinops sagax</i>) Abundance off Central California",
         y_label = "Average Abundance catch per unit effort (ln(catch+1))",
         col_t   = "time (UTC)",
         col_y   = "mean_cpue (ln(catch+1))"
         #skip_lines
         #group_by  
         #std_err   
-        , filter="species_group == \"Hake\""
+        , filter="species_group == \"Adult sardine\""
     ),
     error = function(e) e
 )
@@ -59,14 +78,14 @@ tryCatch(
 tryCatch(
     plot_dygraph_timeseries(
         csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_EI_FBC.csvp?time%2Cspecies_group%2Cmean_cpue%2CSeup%2CSelo&distinct()",
-        title   = "Pacific Sardine (<i>Sardinops sagax</i>) Abundance off Central California",
+        title   = "YOY Pacific Sardine (<i>Sardinops sagax</i>) Abundance off Central California",
         y_label = "Average Abundance catch per unit effort (ln(catch+1))",
         col_t   = "time (UTC)",
         col_y   = "mean_cpue (ln(catch+1))"
         #skip_lines
         #group_by  
         #std_err   
-        , filter="species_group == \"Hake\""
+        , filter="species_group == \"YOY sardine\""
     ),
     error = function(e) e
 )
@@ -77,14 +96,14 @@ tryCatch(
 tryCatch(
     plot_dygraph_timeseries(
         csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_EI_FBC.csvp?time%2Cspecies_group%2Cmean_cpue%2CSeup%2CSelo&distinct()",
-        title   = "Sanddab (<i>Citharichthys spp.</i>) Abundance off Central California",
+        title   = "YOY Rockfish Juveniles (<i>YOY rockfish spp.</i>) Abundance off Central California",
         y_label = "Average Abundance catch per unit effort (ln(catch+1))",
         col_t   = "time (UTC)",
         col_y   = "mean_cpue (ln(catch+1))"
         #skip_lines
         #group_by  
         #std_err   
-        , filter="species_group == \"Sanddabs\""
+        , filter="species_group == \"YOY rockfish\""
     ),
     error = function(e) e
 )
@@ -95,14 +114,32 @@ tryCatch(
 tryCatch(
     plot_dygraph_timeseries(
         csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_EI_FBC.csvp?time%2Cspecies_group%2Cmean_cpue%2CSeup%2CSelo&distinct()",
-        title   = "Rockfish Juveniles (<i>YOY rockfish spp.</i>) Abundance off Central California",
+        title   = "YOY Pacific Hake  (<i>Merluccius productus</i>) Abundance off Central California",
         y_label = "Average Abundance catch per unit effort (ln(catch+1))",
         col_t   = "time (UTC)",
         col_y   = "mean_cpue (ln(catch+1))"
         #skip_lines
         #group_by  
         #std_err   
-        , filter="species_group == \"Rockfish juveniles\""
+        , filter="species_group == \"YOY Pacific hake\""
+    ),
+    error = function(e) e
+)
+```
+
+
+```{r out.width='100%'}
+tryCatch(
+    plot_dygraph_timeseries(
+        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_EI_FBC.csvp?time%2Cspecies_group%2Cmean_cpue%2CSeup%2CSelo&distinct()",
+        title   = "YOY Sanddab (<i>Citharichthys spp.</i>) Abundance off Central California",
+        y_label = "Average Abundance catch per unit effort (ln(catch+1))",
+        col_t   = "time (UTC)",
+        col_y   = "mean_cpue (ln(catch+1))"
+        #skip_lines
+        #group_by  
+        #std_err   
+        , filter="species_group == \"YOY sanddabs\""
     ),
     error = function(e) e
 )
